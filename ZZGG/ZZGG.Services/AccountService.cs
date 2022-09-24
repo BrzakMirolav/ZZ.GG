@@ -29,7 +29,6 @@ namespace ZZGG.Services
 
 
 
-
         public AccountService(IConfiguration config)
         {
             _config = config;
@@ -175,7 +174,6 @@ namespace ZZGG.Services
         public async Task<string> GetVersion()
         {
             HttpClient client = new HttpClient();
-            client.DefaultRequestHeaders.Add("X-Riot-Token", _riotKey);
             client.BaseAddress = new Uri(_dDragonBaseAddress);
             var version = "";
 
