@@ -9,5 +9,7 @@ namespace ZZGG.BusinessLogic.Interfaces
         Task<Account> GetAccountDetailsBySummonerName(string summonerName);
         Task<Account> GetAccountDetailsByAccountId(string accountId);
         Task<AccountChampionStats> GetChampionScoreBySummonerIdAndChampionId(string summonerId, int championId);
+        Task<IEnumerable<AccountChampionStats>> GetAllChampionScoreBySummonerId(string summonerId);
+        Task<int> GetAccountTotalMasteryLevel(string summonerId);
     }
 }

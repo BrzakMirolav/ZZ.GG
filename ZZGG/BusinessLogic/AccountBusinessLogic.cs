@@ -106,5 +106,52 @@ namespace ZZGG.BusinessLogic
             }
         }
 
+        public async Task<IEnumerable<AccountChampionStats>> GetAllChampionScoreBySummonerId(string summonerId)
+        {
+            try
+            {
+                var result = new List<AccountChampionStats>();
+
+                var serviceResult = await _accountService.GetAllChampionScoreBySummonerId(summonerId);
+
+                if (serviceResult == null)
+                {
+                    return result;
+                }
+                var mappedResult = _mapper.Map<IEnumerable<AccountChampionStats>>(serviceResult);
+
+                if (mappedResult == null)
+                {
+                    return result;
+                }
+                result = (List<AccountChampionStats>)mappedResult;
+                return result;
+            }
+            catch (Exception ex)
+            {
+                var result = new List<AccountChampionStats>();
+                return result; 
+            }
+        }
+        
+
+        public async Task<int> GetAccountTotalMasteryLevel(string summonerId)
+        {
+            try
+            {
+                var result = 0;
+
+                var serviceResult = await _accountService.GetAccountTotalMasteryLevel(summonerId);
+
+                result = serviceResult;
+
+                return result;
+            }
+            catch(Exception ex)
+            {
+                return 999;
+            }
+        }
+
     }
 }

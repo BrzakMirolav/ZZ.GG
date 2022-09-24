@@ -19,6 +19,9 @@ namespace ZZGG.Services
         private readonly string _getSummonerBySummonerNameMethod;
         private readonly string _getSummonerByAccountId;
         private readonly string _getChampionScoreBySummonerIdAndChampionId;
+        private readonly string _getAccountTotalMasteryLevel;
+        private readonly string _getAllChampionScoreBySummonerId;
+        
 
 
         public AccountService(IConfiguration config)
@@ -29,6 +32,8 @@ namespace ZZGG.Services
             _getSummonerBySummonerNameMethod = _config["LoLAPIMethods:GetSummonerBySummonerName"];
             _getSummonerByAccountId = _config["LoLAPIMethods:GetSummonerByAccountId"];
             _getChampionScoreBySummonerIdAndChampionId = _config["LoLAPIMethods:GetChampionScoreBySummonerIdAndChampionId"];
+            _getAccountTotalMasteryLevel = _config["LoLAPIMethods:GetAccountTotalMasteryLevel"];
+            _getAllChampionScoreBySummonerId = _config["LoLAPIMethods:GetAllChampionScoreBySummonerId"];
         }
 
         public async Task<Account> GetAccountDetailsBySummonerName(string summonerName)
@@ -108,6 +113,53 @@ namespace ZZGG.Services
 
             return accountChampionStats;
             
+        }
+
+        public async Task<IEnumerable<AccountChampionStats>> GetAllChampionScoreBySummonerId(string summonerId)
+        {
+            HttpClient client = new HttpClient();
+            var accountChampionsStats = new List<AccountChampionStats>();
+            client.DefaultRequestHeaders.Add("X-Riot-Token", _riotKey);
+            client.BaseAddress = new Uri(_lolApiBaseAddress);
+
+
+            var response = await client.GetAsync(string.Format(_getAllChampionScoreBySummonerId, summonerId));
+
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                var serializedResponse = JsonConvert.DeserializeObject<IEnumerable<AccountChampionStats>>(content);
+
+                if (serializedResponse == null)
+                {
+                    return accountChampionsStats;
+                }
+                accountChampionsStats = (List<AccountChampionStats>)serializedResponse;
+
+            }
+
+            return accountChampionsStats;
+
+        }
+
+
+        public async Task<int> GetAccountTotalMasteryLevel(string summonerId)
+        {
+            HttpClient client = new HttpClient();
+            client.DefaultRequestHeaders.Add("X-Riot-Token", _riotKey);
+            client.BaseAddress = new Uri(_lolApiBaseAddress);
+            var accountMasteryLevel = 0;
+
+            var response = await client.GetAsync(string.Format(_getAccountTotalMasteryLevel, summonerId));
+
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                accountMasteryLevel = Convert.ToInt32(content);
+
+            }
+
+            return accountMasteryLevel;
         }
     }
 }

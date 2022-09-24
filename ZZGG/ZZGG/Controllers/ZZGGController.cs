@@ -33,5 +33,19 @@ namespace ZZGG.Controllers
         {
             return Ok(await _accountBL.GetChampionScoreBySummonerIdAndChampionId(summonerId, championId));
         }
+
+        [HttpGet("GetAllChampionScoreBySummonerId")]
+        public async Task<IActionResult> GetAllChampionScoreBySummonerId(string summonerId)
+        {
+            return Ok(await _accountBL.GetAllChampionScoreBySummonerId(summonerId));
+        }
+
+        [HttpGet("GetAccountTotalMasteryLevel")]
+        public async Task<IActionResult> GetAccountTotalMasteryLevel(string summonerId)
+        {
+            return Ok(await _accountBL.GetAccountTotalMasteryLevel(summonerId));
+        }
+
+        
     }
 }
