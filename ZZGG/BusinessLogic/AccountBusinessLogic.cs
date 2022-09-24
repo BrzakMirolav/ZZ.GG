@@ -171,5 +171,25 @@ namespace ZZGG.BusinessLogic
             }
         }
 
+        public async Task<string> GetIconByVersionAndIconId(int iconId)
+        {
+            try
+            {
+                var result = "";
+
+                var serviceResult = await _accountService.GetIconByVersionAndIconId(iconId);
+
+                result = serviceResult;
+
+                return result;
+            }
+            catch (Exception ex)
+            {
+                return ex.ToString();
+            }
+        }
+
+        
+
     }
 }

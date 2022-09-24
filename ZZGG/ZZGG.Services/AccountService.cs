@@ -177,7 +177,7 @@ namespace ZZGG.Services
             HttpClient client = new HttpClient();
             client.DefaultRequestHeaders.Add("X-Riot-Token", _riotKey);
             client.BaseAddress = new Uri(_dDragonBaseAddress);
-            var accountMasteryLevel = "";
+            var version = "";
 
             var response = await client.GetAsync(string.Format(_getVersions));
 
@@ -185,11 +185,24 @@ namespace ZZGG.Services
             {
                 var content = await response.Content.ReadAsStringAsync();
                 var serializedResponse = JsonConvert.DeserializeObject<IEnumerable<string>>(content);
-                accountMasteryLevel = ((List<string>)serializedResponse)[0];
+                version = ((List<string>)serializedResponse)[0];
 
             }
 
-            return accountMasteryLevel;
+            return version;
+        }
+
+        public async Task<string> GetIconByVersionAndIconId(int iconId)
+        {
+            
+            var iconImage = "";
+
+            var version = await GetVersion();
+            var icon = iconId.ToString() + ".png";
+
+            iconImage = _dDragonBaseAddress + string.Format( _getIconByVersionAndIconID, version, icon);
+
+            return iconImage;
         }
     }
 }

@@ -53,5 +53,11 @@ namespace ZZGG.Controllers
         }
 
 
+        [HttpGet("GetIconByVersionAndIconId")]
+        public async Task<IActionResult> GetIconByVersionAndIconId(int iconId)
+        {
+            return Ok(await _accountBL.GetIconByVersionAndIconId(iconId));
+        }
+
     }
 }
