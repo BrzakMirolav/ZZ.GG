@@ -21,19 +21,29 @@ namespace ZZGG.Services
         private readonly string _getChampionScoreBySummonerIdAndChampionId;
         private readonly string _getAccountTotalMasteryLevel;
         private readonly string _getAllChampionScoreBySummonerId;
-        
+
+        private readonly string _dDragonBaseAddress;
+        private readonly string _getVersions;
+        private readonly string _getIconByVersionAndIconID;
+
+
+
 
 
         public AccountService(IConfiguration config)
         {
             _config = config;
             _riotKey = _config["RIOTKEY"];
-            _lolApiBaseAddress = _config["LoLAPIBaseAdress"];
+            _lolApiBaseAddress = _config["LoLAPIBaseAddress"];
             _getSummonerBySummonerNameMethod = _config["LoLAPIMethods:GetSummonerBySummonerName"];
             _getSummonerByAccountId = _config["LoLAPIMethods:GetSummonerByAccountId"];
             _getChampionScoreBySummonerIdAndChampionId = _config["LoLAPIMethods:GetChampionScoreBySummonerIdAndChampionId"];
             _getAccountTotalMasteryLevel = _config["LoLAPIMethods:GetAccountTotalMasteryLevel"];
             _getAllChampionScoreBySummonerId = _config["LoLAPIMethods:GetAllChampionScoreBySummonerId"];
+
+            _dDragonBaseAddress = _config["DDragonBaseAddress"];
+            _getVersions = _config["DDragonAPIMethods:GetVersions"]; 
+            _getIconByVersionAndIconID = _config["DDragonAPIMethods:GetIconByVersionAndIconID"];
         }
 
         public async Task<Account> GetAccountDetailsBySummonerName(string summonerName)
@@ -156,6 +166,26 @@ namespace ZZGG.Services
             {
                 var content = await response.Content.ReadAsStringAsync();
                 accountMasteryLevel = Convert.ToInt32(content);
+
+            }
+
+            return accountMasteryLevel;
+        }
+
+        public async Task<string> GetVersion()
+        {
+            HttpClient client = new HttpClient();
+            client.DefaultRequestHeaders.Add("X-Riot-Token", _riotKey);
+            client.BaseAddress = new Uri(_dDragonBaseAddress);
+            var accountMasteryLevel = "";
+
+            var response = await client.GetAsync(string.Format(_getVersions));
+
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                var serializedResponse = JsonConvert.DeserializeObject<IEnumerable<string>>(content);
+                accountMasteryLevel = ((List<string>)serializedResponse)[0];
 
             }
 

@@ -153,5 +153,23 @@ namespace ZZGG.BusinessLogic
             }
         }
 
+        public async Task<string> GetVersion()
+        {
+            try
+            {
+                var result = "";
+
+                var serviceResult = await _accountService.GetVersion();
+
+                result = serviceResult;
+
+                return result;
+            }
+            catch (Exception ex)
+            {
+                return ex.ToString();
+            }
+        }
+
     }
 }

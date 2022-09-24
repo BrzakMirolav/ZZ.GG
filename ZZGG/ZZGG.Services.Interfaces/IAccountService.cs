@@ -10,5 +10,6 @@ namespace ZZGG.Services.Interfaces
         Task<AccountChampionStats> GetChampionScoreBySummonerIdAndChampionId(string summonerId, int championId);
         Task<IEnumerable<AccountChampionStats>> GetAllChampionScoreBySummonerId(string summonerId);
         Task<int> GetAccountTotalMasteryLevel(string summonerId);
+        Task<string> GetVersion();
     }
 }

@@ -46,6 +46,12 @@ namespace ZZGG.Controllers
             return Ok(await _accountBL.GetAccountTotalMasteryLevel(summonerId));
         }
 
-        
+        [HttpGet("GetVersion")]
+        public async Task<IActionResult> GetVersion()
+        {
+            return Ok(await _accountBL.GetVersion());
+        }
+
+
     }
 }
