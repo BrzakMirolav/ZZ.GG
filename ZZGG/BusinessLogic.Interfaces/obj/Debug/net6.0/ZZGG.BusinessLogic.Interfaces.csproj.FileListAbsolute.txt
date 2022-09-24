@@ -1,0 +1,15 @@
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\BusinessLogic.Interfaces\bin\Debug\net6.0\ZZGG.BusinessLogic.Interfaces.deps.json
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\BusinessLogic.Interfaces\bin\Debug\net6.0\ZZGG.BusinessLogic.Interfaces.dll
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\BusinessLogic.Interfaces\bin\Debug\net6.0\ZZGG.BusinessLogic.Interfaces.pdb
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\BusinessLogic.Interfaces\bin\Debug\net6.0\BusinessModel.dll
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\BusinessLogic.Interfaces\bin\Debug\net6.0\BusinessModel.pdb
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\BusinessLogic.Interfaces\obj\Debug\net6.0\ZZGG.BusinessLogic.Interfaces.csproj.AssemblyReference.cache
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\BusinessLogic.Interfaces\obj\Debug\net6.0\ZZGG.BusinessLogic.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\BusinessLogic.Interfaces\obj\Debug\net6.0\ZZGG.BusinessLogic.Interfaces.AssemblyInfoInputs.cache
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\BusinessLogic.Interfaces\obj\Debug\net6.0\ZZGG.BusinessLogic.Interfaces.AssemblyInfo.cs
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\BusinessLogic.Interfaces\obj\Debug\net6.0\ZZGG.BusinessLogic.Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\BusinessLogic.Interfaces\obj\Debug\net6.0\ZZGG.BusinessLogic.Interfaces.csproj.CopyComplete
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\BusinessLogic.Interfaces\obj\Debug\net6.0\ZZGG.BusinessLogic.Interfaces.dll
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\BusinessLogic.Interfaces\obj\Debug\net6.0\refint\ZZGG.BusinessLogic.Interfaces.dll
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\BusinessLogic.Interfaces\obj\Debug\net6.0\ZZGG.BusinessLogic.Interfaces.pdb
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\BusinessLogic.Interfaces\obj\Debug\net6.0\ref\ZZGG.BusinessLogic.Interfaces.dll

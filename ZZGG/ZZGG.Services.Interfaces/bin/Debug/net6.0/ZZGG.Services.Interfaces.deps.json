@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ZZGG.Services.Interfaces/1.0.0": {
+        "dependencies": {
+          "DataModel": "1.0.0"
+        },
+        "runtime": {
+          "ZZGG.Services.Interfaces.dll": {}
+        }
+      },
+      "DataModel/1.0.0": {
+        "runtime": {
+          "DataModel.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ZZGG.Services.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DataModel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

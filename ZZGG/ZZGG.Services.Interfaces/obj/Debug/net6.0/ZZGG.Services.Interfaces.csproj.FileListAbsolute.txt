@@ -1,0 +1,15 @@
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\ZZGG.Services.Interfaces\bin\Debug\net6.0\ZZGG.Services.Interfaces.deps.json
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\ZZGG.Services.Interfaces\bin\Debug\net6.0\ZZGG.Services.Interfaces.dll
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\ZZGG.Services.Interfaces\bin\Debug\net6.0\ZZGG.Services.Interfaces.pdb
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\ZZGG.Services.Interfaces\bin\Debug\net6.0\DataModel.dll
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\ZZGG.Services.Interfaces\bin\Debug\net6.0\DataModel.pdb
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\ZZGG.Services.Interfaces\obj\Debug\net6.0\ZZGG.Services.Interfaces.csproj.AssemblyReference.cache
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\ZZGG.Services.Interfaces\obj\Debug\net6.0\ZZGG.Services.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\ZZGG.Services.Interfaces\obj\Debug\net6.0\ZZGG.Services.Interfaces.AssemblyInfoInputs.cache
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\ZZGG.Services.Interfaces\obj\Debug\net6.0\ZZGG.Services.Interfaces.AssemblyInfo.cs
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\ZZGG.Services.Interfaces\obj\Debug\net6.0\ZZGG.Services.Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\ZZGG.Services.Interfaces\obj\Debug\net6.0\ZZGG.Services.Interfaces.csproj.CopyComplete
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\ZZGG.Services.Interfaces\obj\Debug\net6.0\ZZGG.Services.Interfaces.dll
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\ZZGG.Services.Interfaces\obj\Debug\net6.0\refint\ZZGG.Services.Interfaces.dll
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\ZZGG.Services.Interfaces\obj\Debug\net6.0\ZZGG.Services.Interfaces.pdb
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\ZZGG.Services.Interfaces\obj\Debug\net6.0\ref\ZZGG.Services.Interfaces.dll
