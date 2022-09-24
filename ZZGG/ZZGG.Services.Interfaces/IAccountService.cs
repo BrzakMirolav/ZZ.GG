@@ -7,6 +7,6 @@ namespace ZZGG.Services.Interfaces
     {
         Task<Account> GetAccountDetailsBySummonerName(string summonersName);
         Task<Account> GetAccountDetailsByAccountId(string accountId);
-        Task<Account> GetChampionScoreBySummonerIdAndChampionId(int championId, string summonersName);
+        Task<AccountChampionStats> GetChampionScoreBySummonerIdAndChampionId(string summonerId, int championId);
     }
 }

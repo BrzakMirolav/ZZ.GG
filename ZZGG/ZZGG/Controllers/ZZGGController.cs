@@ -27,5 +27,11 @@ namespace ZZGG.Controllers
         {
             return Ok(await _accountBL.GetAccountDetailsByAccountId(accountId));
         }
+
+        [HttpGet("GetChampionScoreBySummonerIdAndChampionId")]
+        public async Task<IActionResult> GetChampionScoreBySummonerIdAndChampionId(string summonerId, int championId)
+        {
+            return Ok(await _accountBL.GetChampionScoreBySummonerIdAndChampionId(summonerId, championId));
+        }
     }
 }

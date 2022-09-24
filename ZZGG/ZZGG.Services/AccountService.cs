@@ -31,17 +31,14 @@ namespace ZZGG.Services
             _getChampionScoreBySummonerIdAndChampionId = _config["LoLAPIMethods:GetChampionScoreBySummonerIdAndChampionId"];
         }
 
-        public async Task<Account> GetAccountDetailsBySummonerName(string summonersName)
+        public async Task<Account> GetAccountDetailsBySummonerName(string summonerName)
         {
             HttpClient client = new HttpClient();
             var account = new Account();
             client.DefaultRequestHeaders.Add("X-Riot-Token", _riotKey);
             client.BaseAddress = new Uri(_lolApiBaseAddress);
 
-            var x = "LO9OZTOdxQsJjW1Fsvi_iX1KIa5wGlI_LGZR5YOFEHgy-Io";
-            var y = 238;
-
-            var response = await client.GetAsync(string.Format(_getSummonerBySummonerNameMethod ,summonersName));
+            var response = await client.GetAsync(string.Format(_getSummonerBySummonerNameMethod ,summonerName));
 
             if (response.IsSuccessStatusCode)
             {
@@ -86,33 +83,31 @@ namespace ZZGG.Services
 
         }
 
-        public async Task<Account> GetChampionScoreBySummonerIdAndChampionId(int championId, string summonersName)
+        public async Task<AccountChampionStats> GetChampionScoreBySummonerIdAndChampionId(string summonerId, int championId)
         {
             HttpClient client = new HttpClient();
-            var account = new Account();
+            var accountChampionStats = new AccountChampionStats();
             client.DefaultRequestHeaders.Add("X-Riot-Token", _riotKey);
-            client.BaseAddress = new Uri(_lolApiBaseAddress + _getChampionScoreBySummonerIdAndChampionId);
+            client.BaseAddress = new Uri(_lolApiBaseAddress);
 
-            var x = "LO9OZTOdxQsJjW1Fsvi_iX1KIa5wGlI_LGZR5YOFEHgy-Io";
-            var y = 238;
 
-            var response = await client.GetAsync(string.Format(_lolApiBaseAddress + _getChampionScoreBySummonerIdAndChampionId, championId, summonersName));
+            var response = await client.GetAsync(string.Format(_getChampionScoreBySummonerIdAndChampionId, summonerId, championId));
 
             if (response.IsSuccessStatusCode)
             {
                 var content = await response.Content.ReadAsStringAsync();
-                var serializedResponse = JsonConvert.DeserializeObject<Account>(content);
+                var serializedResponse = JsonConvert.DeserializeObject<AccountChampionStats>(content);
 
                 if (serializedResponse == null)
                 {
-                    return new Account();
+                    return new AccountChampionStats();
                 }
-                account = serializedResponse;
+                accountChampionStats = serializedResponse;
 
             }
 
-            return account;
-
+            return accountChampionStats;
+            
         }
     }
 }

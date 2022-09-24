@@ -19,13 +19,13 @@ namespace ZZGG.BusinessLogic
             _mapper = mapper;
         }
 
-        public async Task<Account> GetAccountDetailsBySummonerName(string summonersName)
+        public async Task<Account> GetAccountDetailsBySummonerName(string summonerName)
         {
             try
             {
                 var result = new Account();
 
-                var serviceResult = await _accountService.GetAccountDetailsBySummonerName(summonersName);
+                var serviceResult = await _accountService.GetAccountDetailsBySummonerName(summonerName);
 
                 if (serviceResult == null)
                 {
@@ -69,8 +69,42 @@ namespace ZZGG.BusinessLogic
             }
             catch (Exception ex)
             {
-                return new Account();
+                return new Account()
+                {
+                    Id = ex.ToString()
+                };
             }
         }
+
+        public async Task<AccountChampionStats> GetChampionScoreBySummonerIdAndChampionId(string summonerId, int championId)
+        {
+            try
+            {
+                var result = new AccountChampionStats();
+
+                var serviceResult = await _accountService.GetChampionScoreBySummonerIdAndChampionId(summonerId, championId);
+
+                if (serviceResult == null)
+                {
+                    return result = new AccountChampionStats();
+                }
+                var mappedResult = _mapper.Map<AccountChampionStats>(serviceResult);
+
+                if (mappedResult == null)
+                {
+                    return result = new AccountChampionStats();
+                }
+                result = mappedResult;
+                return result;
+            }
+            catch(Exception ex)
+            {
+                return new AccountChampionStats()
+                {
+                    SummonerId = ex.ToString()
+                };
+            }
+        }
+
     }
 }
