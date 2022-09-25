@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8wmtB3sm2JSSN+zvLyHc2hotsW2aHtZRUXwR3ngTzvGhmzCV1uAD4VfLPLFnhlZSQHfPX63JsH40mHplLPL7RA==",
+  "dgSpecHash": "txbLtMdLW1PZ75vDzzNdbiwb8UF8UxFbfJFZO8t5skgTRlbvrTTJqRXN+o3K/0Nd+BpNqJvTjh5tmbsC+ahxTw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\BusinessLogic.Interfaces\\ZZGG.BusinessLogic.Interfaces.csproj",
+  "projectFilePath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\BusinessLogic.Interfaces\\ZZGG.BusinessLogic.Interfaces.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bmiki\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\bmiki\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",

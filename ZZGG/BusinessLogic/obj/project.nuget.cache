@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MRspEexGZmbSVIYwKJdo3kRfOJzDHp7glQzMUJOnfR5ICyM8ZDkGyneZRA8T6pSlW+BA9Tju57or/pXGHAzRBg==",
+  "dgSpecHash": "FQNcLzCKCXb0W66BAL87JuYcyJR+oHyccKlN7n1hz4LPUhj+QBg0QWNrH2ud/vxvacky5aZ5zO7rxLqnpGuaag==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\BusinessLogic\\ZZGG.BusinessLogic.csproj",
+  "projectFilePath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\BusinessLogic\\ZZGG.BusinessLogic.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bmiki\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\bmiki\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",

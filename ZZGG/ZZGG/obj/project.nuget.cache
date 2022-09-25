@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aIHw44c+NBBFcwXAvl9agsuMkJscdwklq7r0nBmAbpUggDDxv3fKYfbHaJ/WOWXWH58xvUwXZPgGA6XQtyXExQ==",
+  "dgSpecHash": "NkhEwvzjP8Ev3EFzfNG55y4AEkeUXtP7QgaMQT+CArgGMHP1HF4/RRauLnI7Q5lhwtCEmtDF4hm/dQa7+Nj64Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\ZZGG\\ZZGG.API.csproj",
+  "projectFilePath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\ZZGG\\ZZGG.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bmiki\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\bmiki\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
