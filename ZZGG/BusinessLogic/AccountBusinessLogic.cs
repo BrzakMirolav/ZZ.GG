@@ -135,57 +135,57 @@ namespace ZZGG.BusinessLogic
         }
         
 
-        public async Task<int> GetAccountTotalMasteryLevel(string summonerId)
+        public async Task<TotalMasteryScore> GetAccountTotalMasteryLevel(string summonerId)
         {
             try
             {
-                var result = 0;
+                var result = new TotalMasteryScore();
 
                 var serviceResult = await _accountService.GetAccountTotalMasteryLevel(summonerId);
 
-                result = serviceResult;
+                result.Score = serviceResult;
 
                 return result;
             }
             catch(Exception ex)
             {
-                return 999;
+                return new TotalMasteryScore();
             }
         }
 
-        public async Task<string> GetVersion()
+        public async Task<LoLVersion> GetVersion()
         {
             try
             {
-                var result = "";
+                var result = new LoLVersion();
 
                 var serviceResult = await _accountService.GetVersion();
 
-                result = serviceResult;
+                result.Version = serviceResult;
 
                 return result;
             }
             catch (Exception ex)
             {
-                return ex.ToString();
+                return new LoLVersion();
             }
         }
 
-        public async Task<string> GetIconByVersionAndIconId(int iconId)
+        public async Task<ImageUrl> GetIconByVersionAndIconId(int iconId)
         {
             try
             {
-                var result = "";
+                var result = new ImageUrl();
 
                 var serviceResult = await _accountService.GetIconByVersionAndIconId(iconId);
 
-                result = serviceResult;
+                result.Url = serviceResult;
 
                 return result;
             }
             catch (Exception ex)
             {
-                return ex.ToString();
+                return new ImageUrl();
             }
         }
 

@@ -193,12 +193,10 @@ namespace ZZGG.Services
         public async Task<string> GetIconByVersionAndIconId(int iconId)
         {
             
-            var iconImage = "";
-
             var version = await GetVersion();
             var icon = iconId.ToString() + ".png";
 
-            iconImage = _dDragonBaseAddress + string.Format( _getIconByVersionAndIconID, version, icon);
+            var iconImage = _dDragonBaseAddress + string.Format( _getIconByVersionAndIconID, version, icon);
 
             return iconImage;
         }
