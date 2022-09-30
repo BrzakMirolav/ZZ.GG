@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Account } from '../models/account';
-
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { ZzggService } from '../services/zzgg.service';
 
 @Component({
@@ -9,6 +9,7 @@ import { ZzggService } from '../services/zzgg.service';
   styleUrls: ['./account.component.scss']
 })
 export class AccountComponent implements OnInit {
+  faSearch = faSearch;
   constructor(private zzggService: ZzggService) {
     
    }
