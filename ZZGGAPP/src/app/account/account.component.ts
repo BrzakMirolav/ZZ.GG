@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Account } from '../models/account';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faRefresh } from '@fortawesome/free-solid-svg-icons';
 import { ZzggService } from '../services/zzgg.service';
 
 @Component({
@@ -10,6 +10,7 @@ import { ZzggService } from '../services/zzgg.service';
 })
 export class AccountComponent implements OnInit {
   faSearch = faSearch;
+  faRefresh = faRefresh;
   constructor(private zzggService: ZzggService) {
     
    }
@@ -27,6 +28,11 @@ export class AccountComponent implements OnInit {
   searchAccount(){
     var userName = ((document.getElementById("userNameSearch") as HTMLInputElement).value);
     this.getAccountByName(userName);
+  }
+
+  resetAccount(){
+    this.account = new Account();
+    this.accountLoaded = false;
   }
 
   /*async getAccountByName(name: string){
