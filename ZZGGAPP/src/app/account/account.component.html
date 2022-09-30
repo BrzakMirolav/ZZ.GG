@@ -1,4 +1,16 @@
-<p>account works!</p>
+<h1>ZZ.GG</h1>
+<br><br>
 
+<input style="margin-left: 5%" type="text" placeholder="Username" id="userNameSearch">
+<button (click)="searchAccount()" formtarget="_blank">Search</button>
 
-<img alt="item" [src]="itemImageUrl">
+<div *ngIf="accountLoaded" class="container-fluid" style="border: 1px solid black; height: 50%; padding: 2%; margin: 5%">
+
+    <img id="profileIcon" alt="item" [src]="icon">
+    <h2>{{account?.name}}</h2>
+    <h3>Level: {{account?.summonerLevel}}</h3>
+
+</div>
+<br>
+
+<!-- <button (click)="getIcon()">GetIcon</button> -->

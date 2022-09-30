@@ -10,8 +10,8 @@ namespace ZZGG.BusinessLogic.Interfaces
         Task<Account> GetAccountDetailsByAccountId(string accountId);
         Task<AccountChampionStats> GetChampionScoreBySummonerIdAndChampionId(string summonerId, int championId);
         Task<IEnumerable<AccountChampionStats>> GetAllChampionScoreBySummonerId(string summonerId);
-        Task<int> GetAccountTotalMasteryLevel(string summonerId);
-        Task<string> GetVersion();
-        Task<string> GetIconByVersionAndIconId(int iconId);
+        Task<TotalMasteryScore> GetAccountTotalMasteryLevel(string summonerId);
+        Task<LoLVersion> GetVersion();
+        Task<ImageUrl> GetIconByVersionAndIconId(int iconId);
     }
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Account } from '../models/account';
 
 import { ZzggService } from '../services/zzgg.service';
 
@@ -8,52 +9,61 @@ import { ZzggService } from '../services/zzgg.service';
   styleUrls: ['./account.component.scss']
 })
 export class AccountComponent implements OnInit {
-
   constructor(private zzggService: ZzggService) {
     
    }
    getImg: string | null = "";
    itemImageUrl: string | null = "";
    errors: string | null = "";
+   account: Account | undefined;
+   icon: string | null ="";
+   accountLoaded: boolean = false;
   
   ngOnInit(): void {
-    this.getIconImg();
-    //this.itemImageUrl = this.getIconImg();// "https://ddragon.leagueoflegends.com/cdn/12.18.1/img/profileicon/4791.png" //this.zzggService.getIcon();
+
   }
 
+  searchAccount(){
+    var userName = ((document.getElementById("userNameSearch") as HTMLInputElement).value);
+    this.getAccountByName(userName);
+  }
 
-  /*getIconImg() {
-    this.zzggService.getIcon()
-    .subscribe((data) => {
-      if(data != null)
-      this.getImg = data.body
-  })
-  console.log(this.getImg)
-  return this.getImg;
+  /*async getAccountByName(name: string){
+    var result = await this.zzggService.getAccountByName(name).toPromise();
+    if(result != null){
+      this.account = result;
+    }
   }*/
 
-  /*getIconImg(){
-    this.zzggService.getIcon().subscribe(
-      result => {
-        // Handle result
-        console.log(result)
-        this.getImg = result;
-      },
-      error => {
-        this.errors = error;
-        console.log(this.errors)
-      },
-      () => {
-        // 'onCompleted' callback.
-        // No errors, route to new page here
+
+  async getAccountByName(name: string){
+    await this.zzggService.getAccountByName(name).subscribe(response =>{
+      if(response != null){
+        this.account = response;
+        this.accountLoaded = true;
+        this.getIconImg(this.account.profileIconId);
       }
-    );
-    return this.getImg;
-  }*/
-  getIconImg(){
-    this.zzggService.getIcon().subscribe(data=>{
-      console.log(data);
-    })
+    });
   }
+
+
+  async getIconImg(iconId: number | undefined){
+    await this.zzggService.getIcon(iconId).subscribe(response => {
+      if(response != null){
+        this.icon = response.url;
+        console.log(response)
+      }
+    });
+    
+  }
+
+  async getVersion(){
+    let serviceResult: any;
+    await this.zzggService.getVersion().subscribe((data)=>{
+      serviceResult = data.version;
+    }) ;
+    return serviceResult;
+  }
+
 }
 
