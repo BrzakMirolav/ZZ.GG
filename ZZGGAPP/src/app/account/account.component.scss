@@ -26,6 +26,23 @@
 }
 
 
+/* -----------------------------   Label Paragraphs and Hs  ----------------------------- */
+
+.labelParagraph {
+    display: inline;
+    color: grey;
+}
+
+.labelDataParagraph {
+    display: inline;
+    color: rgb(0, 180, 255);
+}
+
+.title {
+    color: rgb(0, 180, 255);
+}
+
+
 /* -----------------------------   version   ----------------------------- */
 
 #version {
@@ -40,7 +57,7 @@
 
 #profileIcon {
     border-radius: 50%;
-    width: 10%;
+    width: 12%;
 }
 
 
