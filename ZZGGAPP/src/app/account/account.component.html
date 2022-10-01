@@ -1,17 +1,22 @@
-<h1>ZZ.GG</h1>
-<br><br>
+<div id="mainContainer" class="container-fluid">
+    <p id="version">{{version}}</p>
+    <h1>ZZ.GG</h1>
 
-<input style="margin-left: 5%" type="text" placeholder="Username" id="userNameSearch">
-<button (click)="searchAccount()" formtarget="_blank"><fa-icon [icon]="faSearch"></fa-icon></button>
-<button (click)="resetAccount()" formtarget="_blank"><fa-icon [icon]="faRefresh"></fa-icon></button>
+    <input type="text" placeholder="Username" id="userNameSearchInput">
+    <button id="searchButton" (click)="searchAccount()" formtarget="_blank"><fa-icon [icon]="faSearch"></fa-icon></button>
+    <button id="resetButton" (click)="resetAccount()" formtarget="_blank"><fa-icon [icon]="faRefresh"></fa-icon></button>
 
-<div *ngIf="accountLoaded" class="container-fluid" style="border: 1px solid black; height: 50%; padding: 2%; margin: 5%">
+    <div id="accountLoad" *ngIf="accountLoaded" class="container-fluid">
+        <img id="profileIcon" alt="item" [src]="icon">
+        <h2>{{account?.name}}</h2>
+        <h4>Level: {{account?.summonerLevel}}</h4>
+        <button id="refreshButton" (click)="refreshAccount()" formtarget="_blank">Refresh</button>
+    </div>
+    <br>
 
-    <img id="profileIcon" alt="item" [src]="icon" style="border-radius: 50%; ">
-    <h2>{{account?.name}}</h2>
-    <h3>Level: {{account?.summonerLevel}}</h3>
 
 </div>
-<br>
+<!-- Kraj glavnog kontejnera -->
+
 
 <!-- <button (click)="getIcon()">GetIcon</button> -->

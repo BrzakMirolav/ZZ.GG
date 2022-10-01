@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Account } from '../models/account';
 import { faSearch, faRefresh } from '@fortawesome/free-solid-svg-icons';
 import { ZzggService } from '../services/zzgg.service';
@@ -14,23 +14,30 @@ export class AccountComponent implements OnInit {
   constructor(private zzggService: ZzggService) {
     
    }
-   getImg: string | null = "";
-   itemImageUrl: string | null = "";
+   version: string | null = "";
    errors: string | null = "";
    account: Account | undefined;
    icon: string | null ="";
    accountLoaded: boolean = false;
+
+   
   
   ngOnInit(): void {
-
+    this.getAccountByName("raben"); 
+    this.getVersion();
   }
 
   searchAccount(){
-    var userName = ((document.getElementById("userNameSearch") as HTMLInputElement).value);
+    var userName = ((document.getElementById("userNameSearchInput") as HTMLInputElement).value);
     this.getAccountByName(userName);
+  }
+  refreshAccount(){
+    this.getAccountByName(this.account?.name);
+    alert("Uspesno osvezavanje");
   }
 
   resetAccount(){
+    ((document.getElementById("userNameSearchInput") as HTMLInputElement).value) = "";
     this.account = new Account();
     this.accountLoaded = false;
   }
@@ -42,8 +49,7 @@ export class AccountComponent implements OnInit {
     }
   }*/
 
-
-  async getAccountByName(name: string){
+  async getAccountByName(name: string | null = ""){
     await this.zzggService.getAccountByName(name).subscribe(response =>{
       if(response != null){
         this.account = response;
@@ -65,12 +71,11 @@ export class AccountComponent implements OnInit {
   }
 
   async getVersion(){
-    let serviceResult: any;
     await this.zzggService.getVersion().subscribe((data)=>{
-      serviceResult = data.version;
+      console.log(data)
+      this.version = data.version;
     }) ;
-    return serviceResult;
+    //return this.version;
   }
-
 }
 
