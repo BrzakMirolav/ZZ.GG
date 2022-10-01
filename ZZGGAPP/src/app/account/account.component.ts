@@ -19,7 +19,7 @@ export class AccountComponent implements OnInit {
    account: Account | undefined;
    icon: string | null ="";
    accountLoaded: boolean = false;
-
+   score: number | undefined;
    
   
   ngOnInit(): void {
@@ -55,6 +55,7 @@ export class AccountComponent implements OnInit {
         this.account = response;
         this.accountLoaded = true;
         this.getIconImg(this.account.profileIconId);
+        this.getTotalChampionMasteryScoreBySummonerId(this.account.id);
       }
     });
   }
@@ -64,7 +65,6 @@ export class AccountComponent implements OnInit {
     await this.zzggService.getIcon(iconId).subscribe(response => {
       if(response != null){
         this.icon = response.url;
-        console.log(response)
       }
     });
     
@@ -72,10 +72,17 @@ export class AccountComponent implements OnInit {
 
   async getVersion(){
     await this.zzggService.getVersion().subscribe((data)=>{
-      console.log(data)
       this.version = data.version;
     }) ;
-    //return this.version;
   }
+
+  async getTotalChampionMasteryScoreBySummonerId(summonerId: string | null = ""){
+    await this.zzggService.getTotalChampionMasteryScoreBySummonerId(summonerId).subscribe((data)=>{
+      this.score = data.score;
+    }) ;
+  }
+
+
+
 }
 

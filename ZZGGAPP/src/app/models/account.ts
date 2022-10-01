@@ -1,5 +1,5 @@
 export class Account{
-    public id: number | undefined;
+    public id: string | null = "";
     public accountId: string | null = "";
     public puuId: string | null = "";
     public name: string | null = "";
