@@ -2,14 +2,14 @@
     <p id="version">{{version}}</p>
     <h1 class="title">ZZ.GG</h1>
 
-    <input type="text" placeholder="Username" id="userNameSearchInput">
+    <input type="text" placeholder="Summoner name" id="userNameSearchInput">
     <button id="searchButton" (click)="searchAccount()" formtarget="_blank"><fa-icon [icon]="faSearch"></fa-icon></button>
     <button id="resetButton" (click)="resetAccount()" formtarget="_blank"><fa-icon [icon]="faRefresh"></fa-icon></button>
 
 
     <div id="accountLoadMainDiv" *ngIf="accountLoaded" class="container-fluid">
         <div id="accountDivWrap">
-            <div id="accountLoanDiv">
+            <div id="accountLoadDiv">
                 <img id="profileIcon" alt="item" [src]="icon">
                 <h2>
                     <p class="labelParagraph">User:</p>
