@@ -17,7 +17,7 @@ namespace ZZGG.Controllers
         }
 
         [HttpGet("GetAccountDetailsBySummonersName")]
-        public async Task<IActionResult> GetAccountDetailsBySummonerNameAsync(string summonerName)
+        public async Task<IActionResult> GetAccountDetailsBySummonerName(string summonerName)
         {
             return Ok(await _accountBL.GetAccountDetailsBySummonerName(summonerName));
         }

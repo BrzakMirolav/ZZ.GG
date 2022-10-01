@@ -27,8 +27,6 @@ namespace ZZGG.Services
         private readonly string _getIconByVersionAndIconID;
 
 
-
-
         public AccountService(IConfiguration config)
         {
             _config = config;
