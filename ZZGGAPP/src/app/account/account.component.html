@@ -28,8 +28,7 @@
             <!-- Kraj unutrasnjeg account kontejnera -->
             <div id="accountChampions">
                 <div class="championDiv" *ngFor='let champion of championsByAcc'>
-                    <img id="championIcon" src="../../assets/championIcons/Zed.png" alt="championIcon"> <br><br>
-                    <!--../../app/championIcons/Aatrox.png-->
+                    <img id="championIcon" [src]=championIcon alt="championIcon"> <br><br>
                     <hr>
 
                     <p class="labelParagraph">Champion:</p> {{champion.championId}} <br><br>
@@ -48,6 +47,3 @@
 
 </div>
 <!-- Kraj glavnog kontejnera -->
-
-
-<!-- <button (click)="getIcon()">GetIcon</button> -->
