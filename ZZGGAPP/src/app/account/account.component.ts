@@ -2,6 +2,7 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Account } from '../models/account';
 import { faSearch, faRefresh } from '@fortawesome/free-solid-svg-icons';
 import { ZzggService } from '../services/zzgg.service';
+import { AccountChampionStats } from '../models/accountChampionStats';
 
 @Component({
   selector: 'app-account',
@@ -20,6 +21,8 @@ export class AccountComponent implements OnInit {
    icon: string | null ="";
    accountLoaded: boolean = false;
    score: number | undefined;
+   championsByAcc: Array<AccountChampionStats> | undefined;
+   championIcon: string | null = "";
    
   
   ngOnInit(): void {
@@ -56,6 +59,7 @@ export class AccountComponent implements OnInit {
         this.accountLoaded = true;
         this.getIconImg(this.account.profileIconId);
         this.getTotalChampionMasteryScoreBySummonerId(this.account.id);
+        this.getAllChampionScoreBySummonerId(this.account.id);
       }
     });
   }
@@ -73,13 +77,22 @@ export class AccountComponent implements OnInit {
   async getVersion(){
     await this.zzggService.getVersion().subscribe((data)=>{
       this.version = data.version;
-    }) ;
+    });
   }
 
   async getTotalChampionMasteryScoreBySummonerId(summonerId: string | null = ""){
     await this.zzggService.getTotalChampionMasteryScoreBySummonerId(summonerId).subscribe((data)=>{
       this.score = data.score;
-    }) ;
+    });
+  }
+
+
+  async getAllChampionScoreBySummonerId(summonerId: string | null = ""){
+    await this.zzggService.getAllChampionScoreBySummonerId(summonerId).subscribe((data)=>{
+      this.championsByAcc = data.slice(0, 3);
+      console.log(this.championsByAcc[0])
+      this.championIcon = "championIcons/Zed.png"
+    });
   }
 
 
