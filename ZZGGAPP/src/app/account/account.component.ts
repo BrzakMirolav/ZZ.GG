@@ -26,7 +26,7 @@ export class AccountComponent implements OnInit {
    
   
   ngOnInit(): void {
-    this.getAccountByName("raben"); 
+    //this.getAccountByName("raben"); 
     this.getVersion();
   }
 
@@ -60,6 +60,8 @@ export class AccountComponent implements OnInit {
         this.getIconImg(this.account.profileIconId);
         this.getTotalChampionMasteryScoreBySummonerId(this.account.id);
         this.getAllChampionScoreBySummonerId(this.account.id);
+
+        this.championIcon = "../../assets/championIcons/Zed.png";
       }
     });
   }
@@ -91,7 +93,6 @@ export class AccountComponent implements OnInit {
     await this.zzggService.getAllChampionScoreBySummonerId(summonerId).subscribe((data)=>{
       this.championsByAcc = data.slice(0, 3);
       console.log(this.championsByAcc[0])
-      this.championIcon = "championIcons/Zed.png"
     });
   }
 

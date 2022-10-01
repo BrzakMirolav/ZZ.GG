@@ -2,17 +2,17 @@
     <p id="version">{{version}}</p>
     <h1 class="title">ZZ.GG</h1>
 
-    <input type="text" placeholder="Username" id="userNameSearchInput">
+    <input type="text" placeholder="Summoner name" id="userNameSearchInput">
     <button id="searchButton" (click)="searchAccount()" formtarget="_blank"><fa-icon [icon]="faSearch"></fa-icon></button>
     <button id="resetButton" (click)="resetAccount()" formtarget="_blank"><fa-icon [icon]="faRefresh"></fa-icon></button>
 
 
     <div id="accountLoadMainDiv" *ngIf="accountLoaded" class="container-fluid">
         <div id="accountDivWrap">
-            <div id="accountLoanDiv">
+            <div id="accountLoadDiv">
                 <img id="profileIcon" alt="item" [src]="icon">
                 <h2>
-                    <p class="labelParagraph">User:</p>
+                    <p class="labelParagraph">Summoner Name:</p>
                     <p class="labelDataParagraph"> {{account?.name}}</p>
                 </h2>
                 <h4>
@@ -28,8 +28,7 @@
             <!-- Kraj unutrasnjeg account kontejnera -->
             <div id="accountChampions">
                 <div class="championDiv" *ngFor='let champion of championsByAcc'>
-                    <img id="championIcon" src="C:\Users\bmiki\source\repos\ZZ.GG\ZZGGAPP\src\app\championIcons\Zed.png" alt="aaa"> <br><br>
-                    <!--../../app/championIcons/Aatrox.png-->
+                    <img id="championIcon" [src]=championIcon alt="championIcon"> <br><br>
                     <hr>
 
                     <p class="labelParagraph">Champion:</p> {{champion.championId}} <br><br>
@@ -48,6 +47,3 @@
 
 </div>
 <!-- Kraj glavnog kontejnera -->
-
-
-<!-- <button (click)="getIcon()">GetIcon</button> -->
