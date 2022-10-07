@@ -1,6 +1,9 @@
 <div id="mainContainer" class="container-fluid">
-    <p id="version">{{version}}</p>
-    <h1 class="title">ZZ.GG</h1>
+    <p id="version">v{{version}}</p>
+    <h1>
+        <p class="title1">ZZ</p> 
+        <p class="title2">.GG</p>
+    </h1>
 
     <input type="text" placeholder="Summoner name" id="userNameSearchInput">
     <button id="searchButton" (click)="searchAccount()" formtarget="_blank"><fa-icon [icon]="faSearch"></fa-icon></button>
@@ -29,12 +32,12 @@
             <div id="accountChampions">
                 <div class="championDiv" *ngFor='let champion of championsByAcc'>
                     <img id="championIcon" [src]=championIcon alt="championIcon"> <br><br>
-                    <hr>
+                    <hr class="championHr">
 
-                    <p class="labelParagraph">Champion:</p> {{champion.championId}} <br><br>
-                    <p class="labelParagraph">Champion Level:</p> {{champion.championLevel}} <br><br>
-                    <p class="labelParagraph">Champion Points:</p> {{champion.championPoints}} <br><br>
-                    <p class="labelParagraph">Chest Granted:</p> {{champion.chestGranted}} <br><br>
+                    <p class="labelParagraph">Champion: </p> <p class="labelDataParagraph">{{champion.championId}}</p> <br><br>
+                    <p class="labelParagraph">Champion Level: </p> <p class="labelDataParagraph">{{champion.championLevel}}</p> <br><br>
+                    <p class="labelParagraph">Champion Points: </p> <p class="labelDataParagraph">{{champion.championPoints}}</p> <br><br>
+                    <p class="labelParagraph">Chest Granted: </p> <p class="labelDataParagraph">{{champion.chestGranted}}</p> <br><br>
                 </div>
             </div>
             <!-- Kraj account champions div-a -->

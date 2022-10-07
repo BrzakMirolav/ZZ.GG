@@ -8,32 +8,25 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\bmiki\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\bmiki\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\BusinessModels\\BusinessModel.csproj",
+      "projectUniqueName": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\BusinessModels\\BusinessModel.csproj",
       "projectName": "BusinessModel",
-      "projectPath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\BusinessModels\\BusinessModel.csproj",
+      "projectPath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\BusinessModels\\BusinessModel.csproj",
       "packagesPath": "C:\\Users\\bmiki\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\BusinessModels\\obj\\",
+      "outputPath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\BusinessModels\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
         "C:\\Users\\bmiki\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Oxo\\NuGets\\Oxo.Logging": {},
-        "C:\\Oxo\\NuGets\\Oxo.Logging\\Oxo.Logging\\bin": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },

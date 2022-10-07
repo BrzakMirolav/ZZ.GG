@@ -1,8 +1,11 @@
 /* -----------------------------   Containers and divs  ----------------------------- */
 
+
 #mainContainer {
+    background-color: #323232;
     text-align: center;
     width: 100%;
+    padding: 1% 0 2%;
 }
 
 #accountLoadMainDiv {
@@ -10,6 +13,7 @@
     padding: 2%;
     margin: 5%;
     text-align: left;
+    background-color: #212121;
 }
 
 #accountDivWrap {
@@ -52,7 +56,15 @@
     height: 3em;
     text-align: center;
     font-size: 1em;
+    background-color: #212121;
+    color: #14FFEC;
 }
+
+#userNameSearchInput:focus {
+    outline: none !important;
+    border:1px solid #14FFEC;
+    box-shadow: 0 0 10px #0D7377;
+  }
 
 
 /* -----------------------------   Label Paragraphs and Hs  ----------------------------- */
@@ -62,14 +74,27 @@
     color: grey;
 }
 
-.labelDataParagraph {
+.labelDataParagraph { 
     display: inline;
-    color: rgb(0, 180, 255);
+    color: #0D7377; //rgb(0, 180, 255);
 }
 
-.title {
-    color: rgb(0, 180, 255);
+.title1 {
+    display: inline;
+    color: #14FFEC; //rgb(0, 180, 255);
+
 }
+.title2 {
+    color: #212121; //rgb(0, 180, 255);
+    display: inline;
+}
+
+.championHr{
+    background-color: aqua; 
+    border: none; 
+    height: 1px;
+}
+
 
 
 /* -----------------------------   version   ----------------------------- */
@@ -104,7 +129,8 @@
     height: 3.4em;
     font-size: 1em;
     margin-left: 0.5%;
-    background-color: rgb(0, 180, 255);
+    background-color: #14FFEC;
+    
 }
 
 #resetButton {
@@ -119,22 +145,40 @@
     width: 40%;
     height: 3.4em;
     font-size: 1em;
-    background-color: rgb(0, 180, 255);
-    color: white;
+    background-color: #14FFEC;
+    color: #212121; 
 }
 
 
 /* -----------------------------   Button animations   ----------------------------- */
 
 #searchButton:hover {
-    background-color: lightgrey;
+    color: #14FFEC;
+    background-color: #323232;
+
+    outline: none !important;
+    border:1px solid #14FFEC;
+    box-shadow: 0 0 10px #0D7377;
+
+    transform: scale(1.1);
 }
 
 #resetButton:hover {
-    background-color: lightgrey;
+    color: #14FFEC;
+    background-color: #323232;
+
+    outline: none !important;
+    border:1px solid #14FFEC;
+    box-shadow: 0 0 10px #0D7377;
+    transform: scale(1.1);
 }
 
 #refreshButton:hover {
-    color: black;
-    background-color: lightgrey;
+    color: #14FFEC;
+    background-color: #323232;
+
+    outline: none !important;
+    border:1px solid #14FFEC;
+    box-shadow: 0 0 10px #0D7377;
+    transform: scale(1.1);
 }
