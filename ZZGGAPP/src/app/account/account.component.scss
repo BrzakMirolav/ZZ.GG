@@ -64,7 +64,8 @@
 
 /* -----------------------------   Inputs   ----------------------------- */
 
-#userNameSearchInput {
+/* ------ Dark ----- */
+#userNameSearchInputDark {
     margin-left: 5%;
     margin-top: 2%;
     padding: 0;
@@ -76,10 +77,29 @@
     color: #14FFEC;
 }
 
-#userNameSearchInput:focus {
+#userNameSearchInputDark:focus {
     outline: none !important;
     border:1px solid #14FFEC;
     box-shadow: 0 0 10px #0D7377;
+  }
+/* ------ LIGHT ----- */
+
+#userNameSearchInputLight {
+    margin-left: 5%;
+    margin-top: 2%;
+    padding: 0;
+    width: 35%;
+    height: 3em;
+    text-align: center;
+    font-size: 1em;
+    background-color: #14FFEC;
+    color: #212121;
+}
+
+#userNameSearchInputLight:focus {
+    outline: none !important;
+    border:1px solid #212121;
+    box-shadow: 0 0 10px #323232;
   }
 
 

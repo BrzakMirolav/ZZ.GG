@@ -27,7 +27,7 @@ export class AccountComponent implements OnInit {
    /* THEMES */ 
    mainContainerTheme = 'mainContainerDark'
    accountLoadMainDivTheme = 'accountLoadMainDivDark'
-
+   userNameSearchInpuTheme = 'userNameSearchInputDark'
 
 
    /*--------*/
@@ -41,10 +41,12 @@ export class AccountComponent implements OnInit {
     if(isChecked.target.checked == true){
       this.mainContainerTheme = 'mainContainerLight'
       this.accountLoadMainDivTheme = 'accountLoadMainDivLight'
+      this.userNameSearchInpuTheme = 'userNameSearchInputLight'
     }
     else{
       this.mainContainerTheme = 'mainContainerDark'
       this.accountLoadMainDivTheme = 'accountLoadMainDivDark'
+      this.userNameSearchInpuTheme = 'userNameSearchInputDark'
     }
   }
 
