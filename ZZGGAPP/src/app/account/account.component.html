@@ -1,6 +1,6 @@
 <div [ngClass]="[mainContainerTheme]" class="container-fluid">
     <div class="versionAndTheme">
-        <p class="version">v{{version}}</p>
+        <p *ngIf="version" class="version">v{{version}}</p>
         <div class="themeMode">
             <label class="switch">
             <input type="checkbox" (change)="changeSelection($event)">
