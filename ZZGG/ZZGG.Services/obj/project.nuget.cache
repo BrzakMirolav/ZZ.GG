@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HP9/+dSQQSZSL6Io7JRRkSoUuxaJl7y77bQqgT3NdtqTSpphGtIPlzFHJNRituhZkuaXG+Q6GHmC3F0lf6bowQ==",
+  "dgSpecHash": "VZKF6JEBKo8Bt2iOCZaLtP1zxf+M/y2kBDwmW0guGniQe85OQP9dC316FXAGJ3pVd0H/7CpEXnTSwWBqH55MCQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\ZZGG.Services\\ZZGG.Services.csproj",
+  "projectFilePath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\ZZGG.Services\\ZZGG.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bmiki\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\bmiki\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",

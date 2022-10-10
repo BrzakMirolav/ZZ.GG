@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\ZZGG\\ZZGG.API.csproj": {}
+    "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\ZZGG\\ZZGG.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\BusinessLogic.Interfaces\\ZZGG.BusinessLogic.Interfaces.csproj": {
+    "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\BusinessLogic.Interfaces\\ZZGG.BusinessLogic.Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\BusinessLogic.Interfaces\\ZZGG.BusinessLogic.Interfaces.csproj",
+        "projectUniqueName": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\BusinessLogic.Interfaces\\ZZGG.BusinessLogic.Interfaces.csproj",
         "projectName": "ZZGG.BusinessLogic.Interfaces",
-        "projectPath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\BusinessLogic.Interfaces\\ZZGG.BusinessLogic.Interfaces.csproj",
+        "projectPath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\BusinessLogic.Interfaces\\ZZGG.BusinessLogic.Interfaces.csproj",
         "packagesPath": "C:\\Users\\bmiki\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\BusinessLogic.Interfaces\\obj\\",
+        "outputPath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\BusinessLogic.Interfaces\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bmiki\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\BusinessModels\\BusinessModel.csproj": {
-                "projectPath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\BusinessModels\\BusinessModel.csproj"
+              "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\BusinessModels\\BusinessModel.csproj": {
+                "projectPath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\BusinessModels\\BusinessModel.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\BusinessLogic\\ZZGG.BusinessLogic.csproj": {
+    "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\BusinessLogic\\ZZGG.BusinessLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\BusinessLogic\\ZZGG.BusinessLogic.csproj",
+        "projectUniqueName": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\BusinessLogic\\ZZGG.BusinessLogic.csproj",
         "projectName": "ZZGG.BusinessLogic",
-        "projectPath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\BusinessLogic\\ZZGG.BusinessLogic.csproj",
+        "projectPath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\BusinessLogic\\ZZGG.BusinessLogic.csproj",
         "packagesPath": "C:\\Users\\bmiki\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\BusinessLogic\\obj\\",
+        "outputPath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\BusinessLogic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bmiki\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -93,17 +93,17 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\BusinessLogic.Interfaces\\ZZGG.BusinessLogic.Interfaces.csproj": {
-                "projectPath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\BusinessLogic.Interfaces\\ZZGG.BusinessLogic.Interfaces.csproj"
+              "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\BusinessLogic.Interfaces\\ZZGG.BusinessLogic.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\BusinessLogic.Interfaces\\ZZGG.BusinessLogic.Interfaces.csproj"
               },
-              "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\BusinessModels\\BusinessModel.csproj": {
-                "projectPath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\BusinessModels\\BusinessModel.csproj"
+              "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\BusinessModels\\BusinessModel.csproj": {
+                "projectPath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\BusinessModels\\BusinessModel.csproj"
               },
-              "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\Mapper\\Mapper.csproj": {
-                "projectPath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\Mapper\\Mapper.csproj"
+              "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\Mapper\\Mapper.csproj": {
+                "projectPath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\Mapper\\Mapper.csproj"
               },
-              "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\ZZGG.Services.Interfaces\\ZZGG.Services.Interfaces.csproj": {
-                "projectPath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\ZZGG.Services.Interfaces\\ZZGG.Services.Interfaces.csproj"
+              "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\ZZGG.Services.Interfaces\\ZZGG.Services.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\ZZGG.Services.Interfaces\\ZZGG.Services.Interfaces.csproj"
               }
             }
           }
@@ -147,12 +147,12 @@
         }
       }
     },
-    "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\BusinessModels\\BusinessModel.csproj": {
+    "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\BusinessModels\\BusinessModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\BusinessModels\\BusinessModel.csproj",
+        "projectUniqueName": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\BusinessModels\\BusinessModel.csproj",
         "projectName": "BusinessModel",
-        "projectPath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\BusinessModels\\BusinessModel.csproj",
+        "projectPath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\BusinessModels\\BusinessModel.csproj",
         "packagesPath": "C:\\Users\\bmiki\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\BusinessModels\\obj\\",
         "projectStyle": "PackageReference",
@@ -202,12 +202,12 @@
         }
       }
     },
-    "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\DataModels\\DataModel.csproj": {
+    "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\DataModels\\DataModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\DataModels\\DataModel.csproj",
+        "projectUniqueName": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\DataModels\\DataModel.csproj",
         "projectName": "DataModel",
-        "projectPath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\DataModels\\DataModel.csproj",
+        "projectPath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\DataModels\\DataModel.csproj",
         "packagesPath": "C:\\Users\\bmiki\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\DataModels\\obj\\",
         "projectStyle": "PackageReference",
@@ -257,14 +257,14 @@
         }
       }
     },
-    "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\Mapper\\Mapper.csproj": {
+    "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\Mapper\\Mapper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\Mapper\\Mapper.csproj",
+        "projectUniqueName": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\Mapper\\Mapper.csproj",
         "projectName": "Mapper",
-        "projectPath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\Mapper\\Mapper.csproj",
+        "projectPath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\Mapper\\Mapper.csproj",
         "packagesPath": "C:\\Users\\bmiki\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\Mapper\\obj\\",
+        "outputPath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\Mapper\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bmiki\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -281,11 +281,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\BusinessModels\\BusinessModel.csproj": {
-                "projectPath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\BusinessModels\\BusinessModel.csproj"
+              "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\BusinessModels\\BusinessModel.csproj": {
+                "projectPath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\BusinessModels\\BusinessModel.csproj"
               },
-              "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\DataModels\\DataModel.csproj": {
-                "projectPath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\DataModels\\DataModel.csproj"
+              "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\DataModels\\DataModel.csproj": {
+                "projectPath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\DataModels\\DataModel.csproj"
               }
             }
           }
@@ -325,14 +325,14 @@
         }
       }
     },
-    "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\ZZGG.Services.Interfaces\\ZZGG.Services.Interfaces.csproj": {
+    "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\ZZGG.Services.Interfaces\\ZZGG.Services.Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\ZZGG.Services.Interfaces\\ZZGG.Services.Interfaces.csproj",
+        "projectUniqueName": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\ZZGG.Services.Interfaces\\ZZGG.Services.Interfaces.csproj",
         "projectName": "ZZGG.Services.Interfaces",
-        "projectPath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\ZZGG.Services.Interfaces\\ZZGG.Services.Interfaces.csproj",
+        "projectPath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\ZZGG.Services.Interfaces\\ZZGG.Services.Interfaces.csproj",
         "packagesPath": "C:\\Users\\bmiki\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\ZZGG.Services.Interfaces\\obj\\",
+        "outputPath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\ZZGG.Services.Interfaces\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bmiki\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -349,8 +349,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\DataModels\\DataModel.csproj": {
-                "projectPath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\DataModels\\DataModel.csproj"
+              "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\DataModels\\DataModel.csproj": {
+                "projectPath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\DataModels\\DataModel.csproj"
               }
             }
           }
@@ -384,14 +384,14 @@
         }
       }
     },
-    "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\ZZGG.Services\\ZZGG.Services.csproj": {
+    "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\ZZGG.Services\\ZZGG.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\ZZGG.Services\\ZZGG.Services.csproj",
+        "projectUniqueName": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\ZZGG.Services\\ZZGG.Services.csproj",
         "projectName": "ZZGG.Services",
-        "projectPath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\ZZGG.Services\\ZZGG.Services.csproj",
+        "projectPath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\ZZGG.Services\\ZZGG.Services.csproj",
         "packagesPath": "C:\\Users\\bmiki\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\ZZGG.Services\\obj\\",
+        "outputPath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\ZZGG.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bmiki\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -408,11 +408,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\DataModels\\DataModel.csproj": {
-                "projectPath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\DataModels\\DataModel.csproj"
+              "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\DataModels\\DataModel.csproj": {
+                "projectPath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\DataModels\\DataModel.csproj"
               },
-              "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\ZZGG.Services.Interfaces\\ZZGG.Services.Interfaces.csproj": {
-                "projectPath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\ZZGG.Services.Interfaces\\ZZGG.Services.Interfaces.csproj"
+              "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\ZZGG.Services.Interfaces\\ZZGG.Services.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\ZZGG.Services.Interfaces\\ZZGG.Services.Interfaces.csproj"
               }
             }
           }
@@ -456,14 +456,14 @@
         }
       }
     },
-    "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\ZZGG\\ZZGG.API.csproj": {
+    "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\ZZGG\\ZZGG.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\ZZGG\\ZZGG.API.csproj",
+        "projectUniqueName": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\ZZGG\\ZZGG.API.csproj",
         "projectName": "ZZGG.API",
-        "projectPath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\ZZGG\\ZZGG.API.csproj",
+        "projectPath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\ZZGG\\ZZGG.API.csproj",
         "packagesPath": "C:\\Users\\bmiki\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\ZZGG\\obj\\",
+        "outputPath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\ZZGG\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bmiki\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -480,14 +480,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\BusinessLogic.Interfaces\\ZZGG.BusinessLogic.Interfaces.csproj": {
-                "projectPath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\BusinessLogic.Interfaces\\ZZGG.BusinessLogic.Interfaces.csproj"
+              "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\BusinessLogic.Interfaces\\ZZGG.BusinessLogic.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\BusinessLogic.Interfaces\\ZZGG.BusinessLogic.Interfaces.csproj"
               },
-              "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\BusinessLogic\\ZZGG.BusinessLogic.csproj": {
-                "projectPath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\BusinessLogic\\ZZGG.BusinessLogic.csproj"
+              "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\BusinessLogic\\ZZGG.BusinessLogic.csproj": {
+                "projectPath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\BusinessLogic\\ZZGG.BusinessLogic.csproj"
               },
-              "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\ZZGG.Services\\ZZGG.Services.csproj": {
-                "projectPath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\ZZGG.Services\\ZZGG.Services.csproj"
+              "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\ZZGG.Services\\ZZGG.Services.csproj": {
+                "projectPath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\ZZGG.Services\\ZZGG.Services.csproj"
               }
             }
           }

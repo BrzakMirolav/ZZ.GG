@@ -1,14 +1,16 @@
 /* -----------------------------   Containers and divs  ----------------------------- */
 
+/* ------ DARK ----- */
 
-#mainContainer {
+.mainContainerDark {
     background-color: #323232;
     text-align: center;
     width: 100%;
     padding: 1% 0 2%;
+    font-family: Verdana, Tahoma, sans-serif;
 }
 
-#accountLoadMainDiv {
+.accountLoadMainDivDark {
     border: 1px solid black;
     padding: 2%;
     margin: 5%;
@@ -16,7 +18,7 @@
     background-color: #212121;
 }
 
-#accountDivWrap {
+.accountDivWrap {
     width: 100%;
     height: 100%;
     // display: flex;
@@ -24,14 +26,14 @@
     display: inline-block;
 }
 
-#accountLoadDiv {
+.accountLoadDiv {
     //  border: 3px solid purple;
     // display: inline-block;
     width: 40%;
     float: left;
 }
 
-#accountChampions {
+.accountChampions {
     //  border: 3px solid greenyellow;
     float: left;
     width: 55%;
@@ -45,10 +47,28 @@
     // border: 1px solid black;
 }
 
+/* ------ LIGHT ----- */
+
+.mainContainerLight{
+    background-color: #0D7377;
+    text-align: center;
+    width: 100%;
+    padding: 1% 0 2%;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.accountLoadMainDivLight {
+    border: 1px solid #212121;
+    padding: 2%;
+    margin: 5%;
+    text-align: left;
+    background-color: #14FFEC;
+}
 
 /* -----------------------------   Inputs   ----------------------------- */
 
-#userNameSearchInput {
+/* ------ Dark ----- */
+#userNameSearchInputDark {
     margin-left: 5%;
     margin-top: 2%;
     padding: 0;
@@ -60,24 +80,45 @@
     color: #14FFEC;
 }
 
-#userNameSearchInput:focus {
+#userNameSearchInputDark:focus {
     outline: none !important;
     border:1px solid #14FFEC;
     box-shadow: 0 0 10px #0D7377;
+  }
+/* ------ LIGHT ----- */
+
+#userNameSearchInputLight {
+    margin-left: 5%;
+    margin-top: 2%;
+    padding: 0;
+    width: 35%;
+    height: 3em;
+    text-align: center;
+    font-size: 1em;
+    background-color: #14FFEC;
+    color: #212121;
+}
+
+#userNameSearchInputLight:focus {
+    outline: none !important;
+    border:1px solid #212121;
+    box-shadow: 0 0 10px #323232;
   }
 
 
 /* -----------------------------   Label Paragraphs and Hs  ----------------------------- */
 
-.labelParagraph {
+/* ------ DARK ----- */
+.labelParagraphDark {
     display: inline;
     color: grey;
 }
 
-.labelDataParagraph { 
+.labelDataParagraphDark { 
     display: inline;
     color: #0D7377; //rgb(0, 180, 255);
 }
+
 
 .title1 {
     display: inline;
@@ -89,22 +130,123 @@
     display: inline;
 }
 
-.championHr{
-    background-color: aqua; 
+.championHrDark{
+    background-color: #14FFEC; 
     border: none; 
     height: 1px;
 }
 
+/* ------ LIGHT ----- */
+
+.championHrLight{
+    background-color: #212121; 
+    border: none; 
+    height: 1px;
+}
+
+.labelParagraphLight {
+    display: inline;
+    color: grey;
+}
+
+.labelDataParagraphLight { 
+    display: inline;
+    color: #212121; //rgb(0, 180, 255);
+}
+
+
+/* ------------------------------   theme   ------------------------------ */
+
+.versionAndTheme{
+    position: relative;
+    width: 100%;
+}
+
+.themeMode{
+    display: inline;    
+    margin-top: 0;
+    float: right;
+}
 
 
 /* -----------------------------   version   ----------------------------- */
 
-#version {
+.version {
     color: red;
     margin-top: 0;
-    position: absolute;
     text-align: left;
+    display: inline;
+    float: left;
+    width: 95%;
 }
+
+/* --------------------------   Switch Slider   --------------------------- */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #212121;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 28px;
+    width: 28px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #14FFEC;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #14FFEC;
+  }
+
+  input:checked + .slider:before {
+    background-color: #212121;
+  }
+  
+  /*input:focus + .slider {
+    box-shadow: 0 0 1px #14FFEC;
+  }*/
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(34px);
+    -ms-transform: translateX(34px);
+    transform: translateX(34px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
 
 
 /* -----------------------------   Images   ----------------------------- */
@@ -123,7 +265,8 @@
 
 /* -----------------------------   Buttons   ----------------------------- */
 
-#searchButton {
+/* ------ DARK ----- */
+#searchButtonDark {
     border-radius: 10%;
     width: 3%;
     height: 3.4em;
@@ -133,7 +276,7 @@
     
 }
 
-#resetButton {
+#resetButtonDark {
     border-radius: 10%;
     width: 3%;
     height: 3.4em;
@@ -141,7 +284,7 @@
     margin-left: 0.5%;
 }
 
-#refreshButton {
+#refreshButtonDark {
     width: 40%;
     height: 3.4em;
     font-size: 1em;
@@ -149,10 +292,40 @@
     color: #212121; 
 }
 
+/* ------ LIGHT ----- */
+
+#searchButtonLight {
+    border-radius: 10%;
+    width: 3%;
+    height: 3.4em;
+    font-size: 1em;
+    margin-left: 0.5%;
+    background-color: #212121;
+    color: white;
+    
+}
+
+#resetButtonLight {
+    border-radius: 10%;
+    width: 3%;
+    height: 3.4em;
+    font-size: 1em;
+    margin-left: 0.5%;
+}
+
+#refreshButtonLight {
+    width: 40%;
+    height: 3.4em;
+    font-size: 1em;
+    background-color: #212121;
+    color: #14FFEC; 
+}
+
 
 /* -----------------------------   Button animations   ----------------------------- */
 
-#searchButton:hover {
+/* ------ DARK ----- */
+#searchButtonDark:hover {
     color: #14FFEC;
     background-color: #323232;
 
@@ -163,7 +336,7 @@
     transform: scale(1.1);
 }
 
-#resetButton:hover {
+#resetButtonDark:hover {
     color: #14FFEC;
     background-color: #323232;
 
@@ -173,12 +346,45 @@
     transform: scale(1.1);
 }
 
-#refreshButton:hover {
+#refreshButtonDark:hover {
     color: #14FFEC;
     background-color: #323232;
 
     outline: none !important;
     border:1px solid #14FFEC;
     box-shadow: 0 0 10px #0D7377;
+    transform: scale(1.05);
+}
+
+/* ------ LIGHT ----- */
+
+#searchButtonLight:hover {
+    color: #323232;
+    background-color: #14FFEC;
+
+    outline: none !important;
+    border:1px solid #212121;
+    box-shadow: 0 0 10px #323232;
+
     transform: scale(1.1);
+}
+
+#resetButtonLight:hover {
+    color: #212121;
+    background-color: #14FFEC;
+
+    outline: none !important;
+    border:1px solid #212121;
+    box-shadow: 0 0 10px #323232;
+    transform: scale(1.1);
+}
+
+#refreshButtonLight:hover {
+    color: #212121;
+    background-color: #14FFEC;
+
+    outline: none !important;
+    border:1px solid #212121;
+    box-shadow: 0 0 10px #323232;
+    transform: scale(1.05);
 }
