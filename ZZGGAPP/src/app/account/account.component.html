@@ -1,5 +1,13 @@
-<div id="mainContainer" class="container-fluid">
-    <p id="version">v{{version}}</p>
+<div [ngClass]="[mainContainerTheme]" class="container-fluid">
+    <div class="versionAndTheme">
+        <p class="version">v{{version}}</p>
+        <div class="themeMode">
+            <label class="switch">
+            <input type="checkbox" (change)="changeSelection($event)">
+            <span class="slider round"></span>
+          </label>
+        </div>
+    </div> 
     <h1>
         <p class="title1">ZZ</p> 
         <p class="title2">.GG</p>
@@ -10,9 +18,9 @@
     <button id="resetButton" (click)="resetAccount()" formtarget="_blank"><fa-icon [icon]="faRefresh"></fa-icon></button>
 
 
-    <div id="accountLoadMainDiv" *ngIf="accountLoaded" class="container-fluid">
-        <div id="accountDivWrap">
-            <div id="accountLoadDiv">
+    <div [ngClass]="[accountLoadMainDivTheme]" *ngIf="accountLoaded" class="container-fluid">
+        <div class="accountDivWrap">
+            <div class="accountLoadDiv">
                 <img id="profileIcon" alt="item" [src]="icon">
                 <h2>
                     <p class="labelParagraph">Summoner Name:</p>
@@ -29,7 +37,7 @@
                 <button id="refreshButton" (click)="refreshAccount()" formtarget="_blank">Refresh</button>
             </div>
             <!-- Kraj unutrasnjeg account kontejnera -->
-            <div id="accountChampions">
+            <div class="accountChampions">
                 <div class="championDiv" *ngFor='let champion of championsByAcc'>
                     <img id="championIcon" [src]=championIcon alt="championIcon"> <br><br>
                     <hr class="championHr">

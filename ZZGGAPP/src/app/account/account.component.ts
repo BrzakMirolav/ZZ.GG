@@ -23,11 +23,29 @@ export class AccountComponent implements OnInit {
    score: number | undefined;
    championsByAcc: Array<AccountChampionStats> | undefined;
    championIcon: string | null = "";
-   
-  
+
+   /* THEMES */ 
+   mainContainerTheme = 'mainContainerDark'
+   accountLoadMainDivTheme = 'accountLoadMainDivDark'
+
+
+
+   /*--------*/
+
   ngOnInit(): void {
     this.getAccountByName("raben"); 
     this.getVersion();
+  }
+
+  changeSelection(isChecked: any){
+    if(isChecked.target.checked == true){
+      this.mainContainerTheme = 'mainContainerLight'
+      this.accountLoadMainDivTheme = 'accountLoadMainDivLight'
+    }
+    else{
+      this.mainContainerTheme = 'mainContainerDark'
+      this.accountLoadMainDivTheme = 'accountLoadMainDivDark'
+    }
   }
 
   searchAccount(){

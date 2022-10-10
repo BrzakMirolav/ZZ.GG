@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Pg6Pa3+qjnH+gpD8AzpRxYWWEQx90jyzaIBxWP8qNMPfc25UVyllobW43qpRqleyNkXdPfUgXM1XZkJFgTgf0w==",
+  "dgSpecHash": "MbXUx9OHNQJujYJpG3eR5/5UCmRbRSSSMLifjvFOosT/Oq5tDB4VUi+Oh+M4sZ+hxTEUBvZ1aiRpkjoB+OGPgw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\Mapper\\Mapper.csproj",
+  "projectFilePath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\Mapper\\Mapper.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bmiki\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\bmiki\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
