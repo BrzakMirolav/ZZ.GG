@@ -28,8 +28,12 @@ export class AccountComponent implements OnInit {
    mainContainerTheme = 'mainContainerDark'
    accountLoadMainDivTheme = 'accountLoadMainDivDark'
    userNameSearchInpuTheme = 'userNameSearchInputDark'
-
-
+   searchButtonTheme = 'searchButtonDark'
+   resetButtonTheme = 'resetButtonDark'
+   refreshButtonTheme = 'refreshButtonDark'
+   championHrTheme = 'championHrDark'
+   labelParagraphTheme = 'labelParagraphDark'
+   labelDataParagraphTheme = 'labelDataParagraphDark'
    /*--------*/
 
   ngOnInit(): void {
@@ -42,11 +46,23 @@ export class AccountComponent implements OnInit {
       this.mainContainerTheme = 'mainContainerLight'
       this.accountLoadMainDivTheme = 'accountLoadMainDivLight'
       this.userNameSearchInpuTheme = 'userNameSearchInputLight'
+      this.searchButtonTheme = 'searchButtonLight'
+      this.resetButtonTheme = 'resetButtonLight'
+      this.refreshButtonTheme = 'refreshButtonLight'
+      this.championHrTheme = 'championHrLight'
+      this.labelParagraphTheme = 'labelParagraphLight'
+      this.labelDataParagraphTheme = 'labelDataParagraphLight'
     }
     else{
       this.mainContainerTheme = 'mainContainerDark'
       this.accountLoadMainDivTheme = 'accountLoadMainDivDark'
       this.userNameSearchInpuTheme = 'userNameSearchInputDark'
+      this.searchButtonTheme = 'searchButtonDark'
+      this.resetButtonTheme = 'resetButtonDark'
+      this.refreshButtonTheme = 'refreshButtonDark'
+      this.championHrTheme = 'championHrDark'
+      this.labelParagraphTheme = 'labelParagraphDark'
+      this.labelDataParagraphTheme = 'labelDataParagraphDark'
     }
   }
 

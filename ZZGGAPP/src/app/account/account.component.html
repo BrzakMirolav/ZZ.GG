@@ -14,8 +14,8 @@
     </h1>
 
     <input type="text" placeholder="Summoner name" [id]="userNameSearchInpuTheme">
-    <button id="searchButton" (click)="searchAccount()" formtarget="_blank"><fa-icon [icon]="faSearch"></fa-icon></button>
-    <button id="resetButton" (click)="resetAccount()" formtarget="_blank"><fa-icon [icon]="faRefresh"></fa-icon></button>
+    <button [id]="searchButtonTheme" (click)="searchAccount()" formtarget="_blank"><fa-icon [icon]="faSearch"></fa-icon></button>
+    <button [id]="resetButtonTheme" (click)="resetAccount()" formtarget="_blank"><fa-icon [icon]="faRefresh"></fa-icon></button>
 
 
     <div [ngClass]="[accountLoadMainDivTheme]" *ngIf="accountLoaded" class="container-fluid">
@@ -23,29 +23,29 @@
             <div class="accountLoadDiv">
                 <img id="profileIcon" alt="item" [src]="icon">
                 <h2>
-                    <p class="labelParagraph">Summoner Name:</p>
-                    <p class="labelDataParagraph"> {{account?.name}}</p>
+                    <p [ngClass]="labelParagraphTheme">Summoner Name:</p>
+                    <p [ngClass]="labelDataParagraphTheme"> {{account?.name}}</p>
                 </h2>
                 <h4>
-                    <p class="labelParagraph">Level:</p>
-                    <p class="labelDataParagraph"> {{account?.summonerLevel}}</p>
+                    <p [ngClass]="labelParagraphTheme">Level:</p>
+                    <p [ngClass]="labelDataParagraphTheme"> {{account?.summonerLevel}}</p>
                 </h4>
                 <h4>
-                    <p class="labelParagraph">Champion score:</p>
-                    <p class="labelDataParagraph"> {{score}}</p>
+                    <p [ngClass]="labelParagraphTheme">Champion score:</p>
+                    <p [ngClass]="labelDataParagraphTheme"> {{score}}</p>
                 </h4>
-                <button id="refreshButton" (click)="refreshAccount()" formtarget="_blank">Refresh</button>
+                <button [id]="refreshButtonTheme" (click)="refreshAccount()" formtarget="_blank">Refresh</button>
             </div>
             <!-- Kraj unutrasnjeg account kontejnera -->
             <div class="accountChampions">
                 <div class="championDiv" *ngFor='let champion of championsByAcc'>
                     <img id="championIcon" [src]=championIcon alt="championIcon"> <br><br>
-                    <hr class="championHr">
+                    <hr [ngClass]="[championHrTheme]">
 
-                    <p class="labelParagraph">Champion: </p> <p class="labelDataParagraph">{{champion.championId}}</p> <br><br>
-                    <p class="labelParagraph">Champion Level: </p> <p class="labelDataParagraph">{{champion.championLevel}}</p> <br><br>
-                    <p class="labelParagraph">Champion Points: </p> <p class="labelDataParagraph">{{champion.championPoints}}</p> <br><br>
-                    <p class="labelParagraph">Chest Granted: </p> <p class="labelDataParagraph">{{champion.chestGranted}}</p> <br><br>
+                    <p [ngClass]="labelParagraphTheme">Champion: </p> <p [ngClass]="labelDataParagraphTheme">{{champion.championId}}</p> <br><br>
+                    <p [ngClass]="labelParagraphTheme">Champion Level: </p> <p [ngClass]="labelDataParagraphTheme">{{champion.championLevel}}</p> <br><br>
+                    <p [ngClass]="labelParagraphTheme">Champion Points: </p> <p [ngClass]="labelDataParagraphTheme">{{champion.championPoints}}</p> <br><br>
+                    <p [ngClass]="labelParagraphTheme">Chest Granted: </p> <p [ngClass]="labelDataParagraphTheme">{{champion.chestGranted}}</p> <br><br>
                 </div>
             </div>
             <!-- Kraj account champions div-a -->

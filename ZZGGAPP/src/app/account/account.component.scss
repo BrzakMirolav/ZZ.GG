@@ -47,6 +47,7 @@
 }
 
 /* ------ LIGHT ----- */
+
 .mainContainerLight{
     background-color: #0D7377;
     text-align: center;
@@ -105,15 +106,17 @@
 
 /* -----------------------------   Label Paragraphs and Hs  ----------------------------- */
 
-.labelParagraph {
+/* ------ DARK ----- */
+.labelParagraphDark {
     display: inline;
     color: grey;
 }
 
-.labelDataParagraph { 
+.labelDataParagraphDark { 
     display: inline;
     color: #0D7377; //rgb(0, 180, 255);
 }
+
 
 .title1 {
     display: inline;
@@ -125,10 +128,28 @@
     display: inline;
 }
 
-.championHr{
-    background-color: aqua; 
+.championHrDark{
+    background-color: #14FFEC; 
     border: none; 
     height: 1px;
+}
+
+/* ------ LIGHT ----- */
+
+.championHrLight{
+    background-color: #212121; 
+    border: none; 
+    height: 1px;
+}
+
+.labelParagraphLight {
+    display: inline;
+    color: grey;
+}
+
+.labelDataParagraphLight { 
+    display: inline;
+    color: #212121; //rgb(0, 180, 255);
 }
 
 
@@ -238,7 +259,8 @@
 
 /* -----------------------------   Buttons   ----------------------------- */
 
-#searchButton {
+/* ------ DARK ----- */
+#searchButtonDark {
     border-radius: 10%;
     width: 3%;
     height: 3.4em;
@@ -248,7 +270,7 @@
     
 }
 
-#resetButton {
+#resetButtonDark {
     border-radius: 10%;
     width: 3%;
     height: 3.4em;
@@ -256,7 +278,7 @@
     margin-left: 0.5%;
 }
 
-#refreshButton {
+#refreshButtonDark {
     width: 40%;
     height: 3.4em;
     font-size: 1em;
@@ -264,10 +286,40 @@
     color: #212121; 
 }
 
+/* ------ LIGHT ----- */
+
+#searchButtonLight {
+    border-radius: 10%;
+    width: 3%;
+    height: 3.4em;
+    font-size: 1em;
+    margin-left: 0.5%;
+    background-color: #212121;
+    color: white;
+    
+}
+
+#resetButtonLight {
+    border-radius: 10%;
+    width: 3%;
+    height: 3.4em;
+    font-size: 1em;
+    margin-left: 0.5%;
+}
+
+#refreshButtonLight {
+    width: 40%;
+    height: 3.4em;
+    font-size: 1em;
+    background-color: #212121;
+    color: #14FFEC; 
+}
+
 
 /* -----------------------------   Button animations   ----------------------------- */
 
-#searchButton:hover {
+/* ------ DARK ----- */
+#searchButtonDark:hover {
     color: #14FFEC;
     background-color: #323232;
 
@@ -278,7 +330,7 @@
     transform: scale(1.1);
 }
 
-#resetButton:hover {
+#resetButtonDark:hover {
     color: #14FFEC;
     background-color: #323232;
 
@@ -288,12 +340,45 @@
     transform: scale(1.1);
 }
 
-#refreshButton:hover {
+#refreshButtonDark:hover {
     color: #14FFEC;
     background-color: #323232;
 
     outline: none !important;
     border:1px solid #14FFEC;
     box-shadow: 0 0 10px #0D7377;
+    transform: scale(1.05);
+}
+
+/* ------ LIGHT ----- */
+
+#searchButtonLight:hover {
+    color: #323232;
+    background-color: #14FFEC;
+
+    outline: none !important;
+    border:1px solid #212121;
+    box-shadow: 0 0 10px #323232;
+
+    transform: scale(1.1);
+}
+
+#resetButtonLight:hover {
+    color: #212121;
+    background-color: #14FFEC;
+
+    outline: none !important;
+    border:1px solid #212121;
+    box-shadow: 0 0 10px #323232;
+    transform: scale(1.1);
+}
+
+#refreshButtonLight:hover {
+    color: #212121;
+    background-color: #14FFEC;
+
+    outline: none !important;
+    border:1px solid #212121;
+    box-shadow: 0 0 10px #323232;
     transform: scale(1.05);
 }
