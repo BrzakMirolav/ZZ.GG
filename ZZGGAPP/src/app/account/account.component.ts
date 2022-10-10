@@ -1,6 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Account } from '../models/account';
-import { faSearch, faRefresh } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faRefresh, faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import { ZzggService } from '../services/zzgg.service';
 import { AccountChampionStats } from '../models/accountChampionStats';
 
@@ -12,6 +12,8 @@ import { AccountChampionStats } from '../models/accountChampionStats';
 export class AccountComponent implements OnInit {
   faSearch = faSearch;
   faRefresh = faRefresh;
+  faMoon = faMoon;
+  faSun = faSun;
   constructor(private zzggService: ZzggService) {
     
    }

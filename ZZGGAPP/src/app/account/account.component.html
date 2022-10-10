@@ -2,10 +2,15 @@
     <div class="versionAndTheme">
         <p *ngIf="version" class="version">v{{version}}</p>
         <div class="themeMode">
-            <label class="switch">
+            
+            <label class="switch"> aaa
             <input type="checkbox" (change)="changeSelection($event)">
-            <span class="slider round"></span>
-          </label>
+            <span class="slider round"> 
+                &nbsp;<fa-icon style="font-size:1.6em; color: #B2B2B2;" [icon]="faMoon"></fa-icon>
+                <fa-icon style="font-size:1.6em; color: #FFFF44;" [icon]="faSun"></fa-icon>
+            </span>
+            </label>
+            
         </div>
     </div> 
     <h1>
