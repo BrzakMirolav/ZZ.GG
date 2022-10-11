@@ -18,5 +18,9 @@ namespace BusinessModel
         public int TokensEarned { get; set; }
         public string SummonerId { get; set; }
 
+        public string ChampionName { get; set; }
+        public string ChampionIcon { get; set; }
+
+        public string ChampionTitle { get; set; }
     }
 }
