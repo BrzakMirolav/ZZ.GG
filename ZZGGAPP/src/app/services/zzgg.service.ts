@@ -6,6 +6,7 @@ import { LoLVersion } from '../models/lolVersion';
 import { ImageUrl } from '../models/imageUrl';
 import { TotalMasteryScore } from '../models/totalMasteryScore';
 import { AccountChampionStats } from '../models/accountChampionStats';
+import { Champion } from '../models/champion';
 
 @Injectable({
   providedIn: 'root'
@@ -47,6 +48,12 @@ getAccountByName(name: string | null = "")
   : Observable<Array<AccountChampionStats>>{
     const url = this.lolRootURL.concat("GetAllChampionScoreBySummonerId?summonerId="+summonerId);
     return this.http.get<Array<AccountChampionStats>>(url,{})
+  }
+
+  getChampionById(championId: number | undefined)
+  : Observable<Champion>{
+    const url = this.lolRootURL.concat("GetChampionById?championId="+championId);
+    return this.http.get<Champion>(url,{})
   }
 
 }

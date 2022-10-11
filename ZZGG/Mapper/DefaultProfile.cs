@@ -30,6 +30,9 @@ namespace Mapper
                .ForMember(dest => dest.ChestGranted, m => m.MapFrom(source => source.ChestGranted))
                .ForMember(dest => dest.TokensEarned, m => m.MapFrom(source => source.TokensEarned))
                .ForMember(dest => dest.SummonerId, m => m.MapFrom(source => source.SummonerId))
+               .ForMember(dest => dest.ChampionName, m => m.MapFrom(source => source.ChampionName))
+               .ForMember(dest => dest.ChampionIcon, m => m.MapFrom(source => source.ChampionIcon))
+               .ForMember(dest => dest.ChampionTitle, m => m.MapFrom(source => source.ChampionTitle))
                ;
 
             CreateMap<BusinessModel.Champion, DataModel.Champion>().ReverseMap()

@@ -137,7 +137,7 @@ namespace ZZGG.Services
             client.DefaultRequestHeaders.Add("X-Riot-Token", _riotKey);
             client.BaseAddress = new Uri(_lolApiBaseAddress);
 
-
+            
             var response = await client.GetAsync(string.Format(_getAllChampionScoreBySummonerId, summonerId));
 
             if (response.IsSuccessStatusCode)
@@ -149,7 +149,21 @@ namespace ZZGG.Services
                 {
                     return accountChampionsStats;
                 }
-                accountChampionsStats = (List<AccountChampionStats>)serializedResponse;
+                var championListWithNameAndIcon = new List<AccountChampionStats>();
+
+                foreach (var champion in serializedResponse.Take(3))
+                {
+                    var tempChamp = await GetChampionById(champion.ChampionId);
+                    champion.ChampionName = tempChamp.Name;
+                    champion.ChampionIcon = tempChamp.Image.Full;
+                    champion.ChampionTitle = tempChamp.Title;
+                    championListWithNameAndIcon.Add(champion);
+                }
+
+                if (championListWithNameAndIcon != null)
+                    accountChampionsStats = championListWithNameAndIcon;
+
+                return accountChampionsStats;  //(List<AccountChampionStats>)serializedResponse;
 
             }
 

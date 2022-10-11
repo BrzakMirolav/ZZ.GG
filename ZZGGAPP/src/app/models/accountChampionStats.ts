@@ -8,4 +8,7 @@ export class AccountChampionStats{
     public chestGranted : boolean | undefined;
     public tokensEarned  : number | undefined;
     public summonerId : string | null = "";
+    public championName : string | null = "";
+    public championIcon : string | null = "";
+    public championTitle : string | null = "";
 }

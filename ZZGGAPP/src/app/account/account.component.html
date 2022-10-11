@@ -44,10 +44,11 @@
             <!-- Kraj unutrasnjeg account kontejnera -->
             <div class="accountChampions">
                 <div class="championDiv" *ngFor='let champion of championsByAcc'>
-                    <img id="championIcon" [src]=championIcon alt="championIcon"> <br><br>
-                    <hr [ngClass]="[championHrTheme]">
+                    <img id="championIcon" [src]=champion.championIcon alt="championIcon"> <br><br>
+                    <p [ngClass]="labelDataParagraphTheme">{{champion.championTitle}}</p> <br>
+                    <hr [ngClass]="[championHrTheme]"><br>
 
-                    <p [ngClass]="labelParagraphTheme">Champion: </p> <p [ngClass]="labelDataParagraphTheme">{{champion.championId}}</p> <br><br>
+                    <p [ngClass]="labelParagraphTheme">Champion: </p> <p [ngClass]="labelDataParagraphTheme">{{champion.championName}}</p> <br><br>
                     <p [ngClass]="labelParagraphTheme">Champion Level: </p> <p [ngClass]="labelDataParagraphTheme">{{champion.championLevel}}</p> <br><br>
                     <p [ngClass]="labelParagraphTheme">Champion Points: </p> <p [ngClass]="labelDataParagraphTheme">{{champion.championPoints}}</p> <br><br>
                     <p *ngIf="champion.chestGranted; else elseBlock" [ngClass]="labelParagraphTheme">Chest Granted: </p> <p *ngIf="champion.chestGranted" [ngClass]="labelDataParagraphTheme"> Yes</p> <br><br>
