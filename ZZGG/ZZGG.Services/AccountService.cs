@@ -46,7 +46,7 @@ namespace ZZGG.Services
             _getAllChampionScoreBySummonerId = _config["LoLAPIMethods:GetAllChampionScoreBySummonerId"];
 
             _dDragonBaseAddress = _config["DDragonBaseAddress"];
-            _getVersions = _config["DDragonAPIMethods:GetVersions"]; 
+            _getVersions = _config["DDragonAPIMethods:GetVersions"];
             _getIconByVersionAndIconID = _config["DDragonAPIMethods:GetIconByVersionAndIconID"];
             _getAllChampions = _config["DDragonAPIMethods:GetAllChampions"];
         }
@@ -58,7 +58,7 @@ namespace ZZGG.Services
             client.DefaultRequestHeaders.Add("X-Riot-Token", _riotKey);
             client.BaseAddress = new Uri(_lolApiBaseAddress);
 
-            var response = await client.GetAsync(string.Format(_getSummonerBySummonerNameMethod ,summonerName));
+            var response = await client.GetAsync(string.Format(_getSummonerBySummonerNameMethod, summonerName));
 
             if (response.IsSuccessStatusCode)
             {
@@ -70,7 +70,7 @@ namespace ZZGG.Services
                     return new Account();
                 }
                 account = serializedResponse;
-                
+
             }
 
             return account;
@@ -127,7 +127,7 @@ namespace ZZGG.Services
             }
 
             return accountChampionStats;
-            
+
         }
 
         public async Task<IEnumerable<AccountChampionStats>> GetAllChampionScoreBySummonerId(string summonerId)
@@ -198,11 +198,11 @@ namespace ZZGG.Services
 
         public async Task<string> GetIconByVersionAndIconId(int iconId)
         {
-            
+
             var version = await GetVersion();
             var icon = iconId.ToString() + ".png";
 
-            var iconImage = _dDragonBaseAddress + string.Format( _getIconByVersionAndIconID, version, icon);
+            var iconImage = _dDragonBaseAddress + string.Format(_getIconByVersionAndIconID, version, icon);
 
             return iconImage;
         }
@@ -222,16 +222,41 @@ namespace ZZGG.Services
                 var content = await response.Content.ReadAsStringAsync();
 
                 var serializedResponse = JsonConvert.DeserializeObject<RootChampionDTO>(content);
-                if(serializedResponse != null)
+                if (serializedResponse != null)
                 {
                     champions = serializedResponse.Data.Values.ToList();
                 }
-                   
 
             }
 
             return champions;
         }
+
+        public async Task<Champion> GetChampionById(int championId)
+        {
+
+            var result = new Champion();
+
+            var champions = await GetAllChampions();
+
+            if (champions != null)
+            {
+
+                foreach (var champion in champions)
+                {
+                    if (champion.Key == championId.ToString())
+                    {
+                        result = champion;
+                        return result;
+                    }
+
+                }
+
+            }
+
+            return result;
+        }
+
 
     }
 }

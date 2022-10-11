@@ -13,5 +13,6 @@ namespace ZZGG.Services.Interfaces
         Task<string> GetVersion();
         Task<string> GetIconByVersionAndIconId(int iconId);
         Task<IEnumerable<Champion>> GetAllChampions();
+        Task<Champion> GetChampionById(int championId);
     }
 }

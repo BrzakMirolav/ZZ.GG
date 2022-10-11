@@ -66,5 +66,11 @@ namespace ZZGG.Controllers
             return Ok(await _accountBL.GetAllChampions());
         }
 
+        [HttpGet("GetChampionById")]
+        public async Task<IActionResult> GetChampionById(int championId)
+        {
+            return Ok(await _accountBL.GetChampionById(championId));
+        }
+
     }
 }

@@ -13,7 +13,7 @@ namespace ZZGG.BusinessLogic.Interfaces
         Task<TotalMasteryScore> GetAccountTotalMasteryLevel(string summonerId);
         Task<LoLVersion> GetVersion();
         Task<ImageUrl> GetIconByVersionAndIconId(int iconId);
-
         Task<IEnumerable<Champion>> GetAllChampions();
+        Task<Champion> GetChampionById(int championId);
     }
 }

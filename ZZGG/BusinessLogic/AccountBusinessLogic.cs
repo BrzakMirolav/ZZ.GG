@@ -209,7 +209,26 @@ namespace ZZGG.BusinessLogic
             }
         }
 
+        
 
+             public async Task<Champion> GetChampionById(int championId)
+        {
+            try
+            {
+                var result = new Champion();
+
+                var serviceResult = await _accountService.GetChampionById(championId);
+                var mappedResult = _mapper.Map<Champion>(serviceResult);
+
+                result = mappedResult;
+
+                return result;
+            }
+            catch (Exception ex)
+            {
+                return new Champion();
+            }
+        }
 
     }
 }
