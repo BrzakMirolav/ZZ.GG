@@ -1,12 +1,13 @@
 ﻿using AutoMapper;
 using BusinessModel;
 using Microsoft.Extensions.Logging;
+using System.Collections.Generic;
 using ZZGG.BusinessLogic.Interfaces;
 using ZZGG.Services.Interfaces;
 
 namespace ZZGG.BusinessLogic
 {
-    public class AccountBusinessLogic: IAccountBusinessLogic
+    public class AccountBusinessLogic : IAccountBusinessLogic
     {
         private readonly ILogger<AccountBusinessLogic> _logger;
         private readonly IAccountService _accountService;
@@ -40,7 +41,7 @@ namespace ZZGG.BusinessLogic
                 result = mappedResult;
                 return result;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return new Account();
             }
@@ -97,7 +98,7 @@ namespace ZZGG.BusinessLogic
                 result = mappedResult;
                 return result;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return new AccountChampionStats()
                 {
@@ -130,10 +131,10 @@ namespace ZZGG.BusinessLogic
             catch (Exception ex)
             {
                 var result = new List<AccountChampionStats>();
-                return result; 
+                return result;
             }
         }
-        
+
 
         public async Task<TotalMasteryScore> GetAccountTotalMasteryLevel(string summonerId)
         {
@@ -147,7 +148,7 @@ namespace ZZGG.BusinessLogic
 
                 return result;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return new TotalMasteryScore();
             }
@@ -189,7 +190,26 @@ namespace ZZGG.BusinessLogic
             }
         }
 
-        
+        public async Task<IEnumerable<Champion>> GetAllChampions()
+        {
+            try
+            {
+                var result = new List<Champion>();
+
+                var serviceResult = await _accountService.GetAllChampions();
+                var mappedResult = _mapper.Map<IEnumerable<Champion>>(serviceResult);
+
+                result = (List<Champion>)mappedResult;
+
+                return result;
+            }
+            catch (Exception ex)
+            {
+                return new List<Champion>();
+            }
+        }
+
+
 
     }
 }

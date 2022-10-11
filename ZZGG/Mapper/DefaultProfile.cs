@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using BusinessModel;
 using DataModel;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Mapper
 {
@@ -30,6 +31,17 @@ namespace Mapper
                .ForMember(dest => dest.TokensEarned, m => m.MapFrom(source => source.TokensEarned))
                .ForMember(dest => dest.SummonerId, m => m.MapFrom(source => source.SummonerId))
                ;
+
+            CreateMap<BusinessModel.Champion, DataModel.Champion>().ReverseMap()
+                .ForMember(dest => dest.Id, m => m.MapFrom(source => source.Id))
+                .ForMember(dest => dest.Key, m => m.MapFrom(source => source.Key))
+                .ForMember(dest=>dest.Name, m=>m.MapFrom(source => source.Name))
+                .ForMember(dest => dest.Title, m => m.MapFrom(source => source.Title))    
+                .ForPath(dest => dest.Image, m => m.MapFrom(source => source.Image.Full))
+                
+                //.ForMember(dest => dest.Image, opt => opt.ResolveUsing(src => new ChampionImage() { Type = src.Animal, Color = src.AnimalColor }));
+            //.ForMember(dest => new ChampionImage() { Full = dest.Image }, m => m.MapFrom(source => new ChampionImage() { Full = source.Image }))
+            ;
 
 
 

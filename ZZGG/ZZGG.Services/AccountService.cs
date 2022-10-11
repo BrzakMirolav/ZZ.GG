@@ -1,10 +1,16 @@
 ﻿using DataModel;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
+using System.Collections.Generic;
+using System.Collections.Immutable;
+using System.Diagnostics.Metrics;
 using System.IO;
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Text.Json;
+using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 using System.Xml.Linq;
 using ZZGG.Services.Interfaces;
@@ -25,6 +31,7 @@ namespace ZZGG.Services
         private readonly string _dDragonBaseAddress;
         private readonly string _getVersions;
         private readonly string _getIconByVersionAndIconID;
+        private readonly string _getAllChampions;
 
 
         public AccountService(IConfiguration config)
@@ -41,6 +48,7 @@ namespace ZZGG.Services
             _dDragonBaseAddress = _config["DDragonBaseAddress"];
             _getVersions = _config["DDragonAPIMethods:GetVersions"]; 
             _getIconByVersionAndIconID = _config["DDragonAPIMethods:GetIconByVersionAndIconID"];
+            _getAllChampions = _config["DDragonAPIMethods:GetAllChampions"];
         }
 
         public async Task<Account> GetAccountDetailsBySummonerName(string summonerName)
@@ -198,5 +206,32 @@ namespace ZZGG.Services
 
             return iconImage;
         }
+
+        public async Task<IEnumerable<Champion>> GetAllChampions()
+        {
+            HttpClient client = new HttpClient();
+            client.BaseAddress = new Uri(_dDragonBaseAddress);
+
+            var champions = new List<Champion>();
+
+            var response = await client.GetAsync(string.Format(_getAllChampions));
+
+            if (response.IsSuccessStatusCode)
+            {
+
+                var content = await response.Content.ReadAsStringAsync();
+
+                var serializedResponse = JsonConvert.DeserializeObject<RootChampionDTO>(content);
+                if(serializedResponse != null)
+                {
+                    champions = serializedResponse.Data.Values.ToList();
+                }
+                   
+
+            }
+
+            return champions;
+        }
+
     }
 }

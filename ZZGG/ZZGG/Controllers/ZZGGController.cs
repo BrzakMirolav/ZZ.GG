@@ -59,5 +59,12 @@ namespace ZZGG.Controllers
              return Ok(await _accountBL.GetIconByVersionAndIconId(iconId));           
         }
 
+
+        [HttpGet("GetAllChampions")]
+        public async Task<IActionResult> GetAllChampions()
+        {
+            return Ok(await _accountBL.GetAllChampions());
+        }
+
     }
 }
