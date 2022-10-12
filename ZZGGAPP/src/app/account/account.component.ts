@@ -43,7 +43,7 @@ export class AccountComponent implements OnInit {
    /*--------*/
 
   ngOnInit(): void {
-    this.getAccountByName("raben"); 
+    this.getAccountByName("nardo regen"); 
     this.getVersion();
   }
 

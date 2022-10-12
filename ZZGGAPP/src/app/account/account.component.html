@@ -46,14 +46,13 @@
                 <div class="championDiv" *ngFor='let champion of championsByAcc'>
                     <img id="championIcon" [src]=champion.championIcon alt="championIcon"> <br><br>
                     <p [ngClass]="labelDataParagraphTheme">{{champion.championTitle}}</p> <br>
-                    <hr [ngClass]="[championHrTheme]"><br>
+                    <hr [ngClass]="[championHrTheme]"><br> 
 
                     <p [ngClass]="labelParagraphTheme">Champion: </p> <p [ngClass]="labelDataParagraphTheme">{{champion.championName}}</p> <br><br>
                     <p [ngClass]="labelParagraphTheme">Champion Level: </p> <p [ngClass]="labelDataParagraphTheme">{{champion.championLevel}}</p> <br><br>
                     <p [ngClass]="labelParagraphTheme">Champion Points: </p> <p [ngClass]="labelDataParagraphTheme">{{champion.championPoints}}</p> <br><br>
-                    <p *ngIf="champion.chestGranted; else elseBlock" [ngClass]="labelParagraphTheme">Chest Granted: </p> <p *ngIf="champion.chestGranted" [ngClass]="labelDataParagraphTheme"> Yes</p> <br><br>
-                    <ng-template #elseBlock><p [ngClass]="labelParagraphTheme">Chest Granted: </p> <p [ngClass]="labelDataParagraphTheme"> No</p> <br><br></ng-template>
-                    
+                    <p *ngIf="champion.chestGranted; else elseBlock" [ngClass]="labelParagraphTheme">Chest Granted: </p> <p *ngIf="champion.chestGranted" [ngClass]="labelDataParagraphTheme"> Yes</p> <br>
+                    <ng-template #elseBlock><p [ngClass]="labelParagraphTheme">Chest Granted: </p> <p [ngClass]="labelDataParagraphTheme"> No</p> </ng-template>
                     
                 </div>
             </div>

@@ -23,25 +23,28 @@
     height: 100%;
     // display: flex;
     // border: 1px solid red;
-    display: inline-block;
+    display: inline-block ;
 }
 
 .accountLoadDiv {
     //  border: 3px solid purple;
     // display: inline-block;
     width: 40%;
+    height: 100%;
     float: left;
 }
 
 .accountChampions {
-    //  border: 3px solid greenyellow;
+    //border: 3px solid greenyellow;
     float: left;
-    width: 55%;
+    width: 60%;
+    height: 100%;
     //margin-left: 1000px;
 }
 
 .championDiv {
     width: 33%;
+    height: 100%;
     //margin-left: 2%;
     display: inline-block;
     // border: 1px solid black;
@@ -267,8 +270,8 @@
 }
 
 #championIcon {
-    width: 50%;
-    height: 50%;
+    width: 55%;
+    height: 55%;
     display: inline-block;
 }
 
