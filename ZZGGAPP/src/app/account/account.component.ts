@@ -38,6 +38,8 @@ export class AccountComponent implements OnInit {
    championHrTheme = 'championHrDark'
    labelParagraphTheme = 'labelParagraphDark'
    labelDataParagraphTheme = 'labelDataParagraphDark'
+   title1Theme = 'title1Dark'
+   title2Theme = 'title2Dark'
    /*--------*/
 
   ngOnInit(): void {
@@ -56,6 +58,8 @@ export class AccountComponent implements OnInit {
       this.championHrTheme = 'championHrLight'
       this.labelParagraphTheme = 'labelParagraphLight'
       this.labelDataParagraphTheme = 'labelDataParagraphLight'
+      this.title1Theme = 'title1Light'
+      this.title2Theme = 'title2Light'
     }
     else{
       this.mainContainerTheme = 'mainContainerDark'
@@ -67,6 +71,8 @@ export class AccountComponent implements OnInit {
       this.championHrTheme = 'championHrDark'
       this.labelParagraphTheme = 'labelParagraphDark'
       this.labelDataParagraphTheme = 'labelDataParagraphDark'
+      this.title1Theme = 'title1Dark'
+      this.title2Theme = 'title2Dark'
     }
   }
 

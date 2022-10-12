@@ -50,7 +50,7 @@
 /* ------ LIGHT ----- */
 
 .mainContainerLight{
-    background-color: #0D7377;
+    background-color: #BCE5E6;
     text-align: center;
     width: 100%;
     padding: 1% 0 2%;
@@ -58,11 +58,11 @@
 }
 
 .accountLoadMainDivLight {
-    border: 1px solid #212121;
+    border: 1px solid #084A81;
     padding: 2%;
     margin: 5%;
     text-align: left;
-    background-color: #14FFEC;
+    background-color: #F0F7F7;
 }
 
 /* -----------------------------   Inputs   ----------------------------- */
@@ -95,14 +95,14 @@
     height: 3em;
     text-align: center;
     font-size: 1em;
-    background-color: #14FFEC;
-    color: #212121;
+    background-color: #F0F7F7;
+    color: #084A81;
 }
 
 #userNameSearchInputLight:focus {
     outline: none !important;
-    border:1px solid #212121;
-    box-shadow: 0 0 10px #323232;
+    border:1px solid #084A81;
+    box-shadow: 0 0 10px #43BFDE;
   }
 
 
@@ -120,12 +120,12 @@
 }
 
 
-.title1 {
+.title1Dark {
     display: inline;
     color: #14FFEC; //rgb(0, 180, 255);
 
 }
-.title2 {
+.title2Dark {
     color: #212121; //rgb(0, 180, 255);
     display: inline;
 }
@@ -138,8 +138,18 @@
 
 /* ------ LIGHT ----- */
 
+.title1Light {
+    display: inline;
+    color: #084A81; //rgb(0, 180, 255);
+
+}
+.title2Light {
+    color:  #F0F7F7; //rgb(0, 180, 255);
+    display: inline;
+}
+
 .championHrLight{
-    background-color: #212121; 
+    background-color: #084A81; 
     border: none; 
     height: 1px;
 }
@@ -151,7 +161,7 @@
 
 .labelDataParagraphLight { 
     display: inline;
-    color: #212121; //rgb(0, 180, 255);
+    color: #084A81; //rgb(0, 180, 255);
 }
 
 
@@ -222,11 +232,11 @@
   }
   
   input:checked + .slider {
-    background-color: #14FFEC;
+    background-color: #F0F7F7;
   }
 
   input:checked + .slider:before {
-    background-color: #212121;
+    background-color: #084A81;
   }
   
   /*input:focus + .slider {
@@ -300,7 +310,7 @@
     height: 3.4em;
     font-size: 1em;
     margin-left: 0.5%;
-    background-color: #212121;
+    background-color: #084A81;
     color: white;
     
 }
@@ -317,8 +327,8 @@
     width: 40%;
     height: 3.4em;
     font-size: 1em;
-    background-color: #212121;
-    color: #14FFEC; 
+    background-color: #084A81;
+    color: #F0F7F7; 
 }
 
 
@@ -359,32 +369,32 @@
 /* ------ LIGHT ----- */
 
 #searchButtonLight:hover {
-    color: #323232;
-    background-color: #14FFEC;
+    color: #43BFDE;
+    background-color: #F0F7F7;
 
     outline: none !important;
-    border:1px solid #212121;
-    box-shadow: 0 0 10px #323232;
+    border:1px solid #084A81;
+    box-shadow: 0 0 10px #43BFDE;
 
     transform: scale(1.1);
 }
 
 #resetButtonLight:hover {
-    color: #212121;
-    background-color: #14FFEC;
+    color: #084A81;
+    background-color: #F0F7F7;
 
     outline: none !important;
-    border:1px solid #212121;
-    box-shadow: 0 0 10px #323232;
+    border:1px solid #084A81;
+    box-shadow: 0 0 10px #43BFDE;
     transform: scale(1.1);
 }
 
 #refreshButtonLight:hover {
-    color: #212121;
-    background-color: #14FFEC;
+    color: #084A81;
+    background-color: #F0F7F7;
 
     outline: none !important;
-    border:1px solid #212121;
-    box-shadow: 0 0 10px #323232;
+    border:1px solid #084A81;
+    box-shadow: 0 0 10px #43BFDE;
     transform: scale(1.05);
 }
