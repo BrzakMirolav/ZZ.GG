@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bjUgiyL08QZa9XYlF3YYa648FG+brTtzO/PeOTGlotCUFtom8C7rAqp+0TASd7uON56zvxcIFUly17gPzwgAtw==",
+  "dgSpecHash": "A2lcy45oE1fkMG2VYcqlODEC9mfsuCy4aVQn6nxtUJbxcISPtZRTslGu6BL4t3hBbDS5Yf9eHo3RMQ9UfycTXA==",
   "success": true,
   "projectFilePath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\BusinessLogic\\ZZGG.BusinessLogic.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,7 @@
     "C:\\Users\\bmiki\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.2\\microsoft.extensions.logging.abstractions.6.0.2.nupkg.sha512",
     "C:\\Users\\bmiki\\.nuget\\packages\\microsoft.extensions.primitives\\2.2.0\\microsoft.extensions.primitives.2.2.0.nupkg.sha512",
     "C:\\Users\\bmiki\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
+    "C:\\Users\\bmiki\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\bmiki\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\bmiki\\.nuget\\packages\\system.memory\\4.5.1\\system.memory.4.5.1.nupkg.sha512",
     "C:\\Users\\bmiki\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.1\\system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512",

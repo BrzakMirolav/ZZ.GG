@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ZZGG.API</name>
+    </assembly>
+    <members>
+        <member name="M:ZZGG.Controllers.ZZGGController.GetAccountDetailsBySummonerName(System.String)">
+            <summary>
+            Method returns account details for provided summoner name.
+            </summary>
+            <param name="summonerName"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

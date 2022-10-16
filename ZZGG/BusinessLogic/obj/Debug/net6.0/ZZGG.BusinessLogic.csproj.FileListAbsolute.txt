@@ -21,3 +21,5 @@ C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\BusinessLogic\obj\Debug\net6.0\ZZGG.Busin
 C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\BusinessLogic\obj\Debug\net6.0\refint\ZZGG.BusinessLogic.dll
 C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\BusinessLogic\obj\Debug\net6.0\ZZGG.BusinessLogic.pdb
 C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\BusinessLogic\obj\Debug\net6.0\ref\ZZGG.BusinessLogic.dll
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\BusinessLogic\bin\Debug\net6.0\ZZGG.BusinessLogic.xml
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\BusinessLogic\obj\Debug\net6.0\ZZGG.BusinessLogic.xml

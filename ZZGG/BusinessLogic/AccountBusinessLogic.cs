@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using BusinessModel;
+using BusinessModel.GlobalModels;
 using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using ZZGG.BusinessLogic.Interfaces;
@@ -20,30 +21,39 @@ namespace ZZGG.BusinessLogic
             _mapper = mapper;
         }
 
-        public async Task<Account> GetAccountDetailsBySummonerName(string summonerName)
+        public async Task<ApiResponse<Account>> GetAccountDetailsBySummonerName(string summonerName)
         {
             try
             {
-                var result = new Account();
+                var result = new ApiResponse<Account>();
 
                 var serviceResult = await _accountService.GetAccountDetailsBySummonerName(summonerName);
 
                 if (serviceResult == null)
                 {
-                    return result = new Account();
+                    result.Success = false;
+                    result.Message = new ApiMessage { Type = MessageType.Error, Text = "Error getting data from service method GetAccountDetailsBySummonerName." };
+                    return result;
                 }
                 var mappedResult = _mapper.Map<Account>(serviceResult);
 
                 if (mappedResult == null)
                 {
-                    return result = new Account();
+                    result.Success = false;
+                    result.Message = new ApiMessage { Type = MessageType.Error, Text = "Error mapping service result to business result." };
+                    return result;
                 }
-                result = mappedResult;
+                result.Success = true;
+                result.Data = mappedResult;
+                result.Message = new ApiMessage { Type = MessageType.Info, Text = "Successfully getting account details by summoner name." };
                 return result;
             }
             catch (Exception ex)
             {
-                return new Account();
+                var result = new ApiResponse<Account>();
+                result.Success = false;
+                result.Message = new ApiMessage { Type = MessageType.Error, Text = "Error getting account details by summoner name.\nException: " + ex };
+                return result;
             }
         }
 

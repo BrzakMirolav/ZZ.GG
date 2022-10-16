@@ -1,5 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BusinessModel;
+using BusinessModel.GlobalModels;
+using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel;
+using System.Net;
 using ZZGG.BusinessLogic.Interfaces;
 
 namespace ZZGG.Controllers
@@ -16,7 +19,13 @@ namespace ZZGG.Controllers
             _accountBL = accountBL;
         }
 
+        /// <summary>
+        /// Method returns account details for provided summoner name.
+        /// </summary>
+        /// <param name="summonerName"></param>
+        /// <returns></returns>
         [HttpGet("GetAccountDetailsBySummonersName")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(ApiResponse<Account>))]
         public async Task<IActionResult> GetAccountDetailsBySummonerName(string summonerName)
         {
             return Ok(await _accountBL.GetAccountDetailsBySummonerName(summonerName));

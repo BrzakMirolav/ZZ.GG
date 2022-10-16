@@ -27,6 +27,7 @@ export class AccountComponent implements OnInit {
    championsByAcc: Array<AccountChampionStats> | undefined;
    championIconBase = "../../assets/championIcons/";
    champion: Champion | undefined;
+  
 
    /* THEMES */ 
    mainContainerTheme = 'mainContainerDark'
@@ -43,7 +44,7 @@ export class AccountComponent implements OnInit {
    /*--------*/
 
   ngOnInit(): void {
-    this.getAccountByName("nardo regen"); 
+    this.getAccountByName("raben"); 
     this.getVersion();
   }
 
@@ -107,13 +108,16 @@ export class AccountComponent implements OnInit {
 
   async getAccountByName(name: string | null = ""){
     await this.zzggService.getAccountByName(name).subscribe(response =>{
-      if(response != null){
-        this.account = response;
+      if(response != null  ){
+        this.account = response.data;
         this.accountLoaded = true;
-        this.getIconImg(this.account.profileIconId);
-        this.getTotalChampionMasteryScoreBySummonerId(this.account.id);
-        this.getAllChampionScoreBySummonerId(this.account.id);
+          if(this.account != null){
+            this.getIconImg(this.account.profileIconId);
+            this.getTotalChampionMasteryScoreBySummonerId(this.account.id);
+            this.getAllChampionScoreBySummonerId(this.account.id);
+          }
 
+          console.log(response)
         //this.championIcon = this.championIconBase + 
         //this.championIcon = "../../assets/championIcons/Zed.png";
       }
@@ -157,7 +161,7 @@ export class AccountComponent implements OnInit {
       })
      // console.log(this.championsByAcc[0])
     });
-    console.log(this.championsByAcc)
+   // console.log(this.championsByAcc)
    /* tempData.forEach(async champion=>{
       let tempAccountChampionStats = new AccountChampionStats();
       let tempChampion = new Champion();
@@ -184,4 +188,6 @@ export class AccountComponent implements OnInit {
   }
 
 }
+
+
 

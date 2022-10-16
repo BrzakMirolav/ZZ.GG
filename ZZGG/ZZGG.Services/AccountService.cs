@@ -73,6 +73,11 @@ namespace ZZGG.Services
 
             }
 
+            else
+            {
+                return null;
+            }
+
             return account;
 
         }

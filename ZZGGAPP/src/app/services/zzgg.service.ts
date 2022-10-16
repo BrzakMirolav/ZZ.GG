@@ -7,6 +7,7 @@ import { ImageUrl } from '../models/imageUrl';
 import { TotalMasteryScore } from '../models/totalMasteryScore';
 import { AccountChampionStats } from '../models/accountChampionStats';
 import { Champion } from '../models/champion';
+import { ApiResponse } from '../models/generalModels/apiResponse';
 
 @Injectable({
   providedIn: 'root'
@@ -27,9 +28,9 @@ getVersion()
 }
 
 getAccountByName(name: string | null = "")
-  : Observable<Account>{
+  : Observable<ApiResponse<Account>>{
     const url = this.lolRootURL.concat("GetAccountDetailsBySummonersName?summonerName="+name);
-    return this.http.get<Account>(url,{})
+    return this.http.get<ApiResponse<Account>>(url,{})
   }
 
   getIcon(iconId: number| undefined)

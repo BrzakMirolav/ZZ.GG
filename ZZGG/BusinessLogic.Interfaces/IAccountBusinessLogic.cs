@@ -1,4 +1,5 @@
 ﻿using BusinessModel;
+using BusinessModel.GlobalModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
@@ -6,7 +7,7 @@ namespace ZZGG.BusinessLogic.Interfaces
 {
     public interface IAccountBusinessLogic
     {
-        Task<Account> GetAccountDetailsBySummonerName(string summonerName);
+        Task<ApiResponse<Account>> GetAccountDetailsBySummonerName(string summonerName);
         Task<Account> GetAccountDetailsByAccountId(string accountId);
         Task<AccountChampionStats> GetChampionScoreBySummonerIdAndChampionId(string summonerId, int championId);
         Task<IEnumerable<AccountChampionStats>> GetAllChampionScoreBySummonerId(string summonerId);
