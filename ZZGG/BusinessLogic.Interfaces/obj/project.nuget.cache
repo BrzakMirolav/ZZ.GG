@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "QCSCt+sS7JCjMvix8ZnxRIjZuZDF9PJejbf0zKGOpXUQPCnnOgxGSZJQ4EXY+cuS9P6KQCVu11m60sg2EDzHQA==",
+  "dgSpecHash": "y0fCY/Zwy0xW8GOV+Gx+35KImB8q6niSFFbm+9hZD9Sb8qKiRs7B5gS9pfcCNpSrS+UJkYRbT1uAOb+C1jgfFg==",
   "success": true,
   "projectFilePath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\BusinessLogic.Interfaces\\ZZGG.BusinessLogic.Interfaces.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\bmiki\\.nuget\\packages\\microsoft.aspnetcore.routing.abstractions\\2.2.0\\microsoft.aspnetcore.routing.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\bmiki\\.nuget\\packages\\microsoft.extensions.primitives\\2.2.0\\microsoft.extensions.primitives.2.2.0.nupkg.sha512",
     "C:\\Users\\bmiki\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
+    "C:\\Users\\bmiki\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\bmiki\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\bmiki\\.nuget\\packages\\system.memory\\4.5.1\\system.memory.4.5.1.nupkg.sha512",
     "C:\\Users\\bmiki\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.1\\system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512",

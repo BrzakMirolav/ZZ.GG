@@ -43,3 +43,6 @@ C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\ZZGG\obj\Debug\net6.0\ref\ZZGG.API.dll
 C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\ZZGG\bin\Debug\net6.0\ZZGG.Services.dll
 C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\ZZGG\bin\Debug\net6.0\ZZGG.Services.pdb
 C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\ZZGG\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\ZZGG\bin\Debug\net6.0\ZZGG.API.xml
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\ZZGG\bin\Debug\net6.0\ZZGG.BusinessLogic.xml
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\ZZGG\obj\Debug\net6.0\ZZGG.API.xml
