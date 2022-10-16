@@ -108,18 +108,17 @@ export class AccountComponent implements OnInit {
 
   async getAccountByName(name: string | null = ""){
     await this.zzggService.getAccountByName(name).subscribe(response =>{
-      if(response != null  ){
+      if(response.data != null && response.success == true){
         this.account = response.data;
         this.accountLoaded = true;
-          if(this.account != null){
-            this.getIconImg(this.account.profileIconId);
-            this.getTotalChampionMasteryScoreBySummonerId(this.account.id);
-            this.getAllChampionScoreBySummonerId(this.account.id);
-          }
-
-          console.log(response)
+        this.getIconImg(this.account.profileIconId);
+        this.getTotalChampionMasteryScoreBySummonerId(this.account.id);
+        this.getAllChampionScoreBySummonerId(this.account.id);
         //this.championIcon = this.championIconBase + 
         //this.championIcon = "../../assets/championIcons/Zed.png";
+      }
+      else{
+        alert(response.message?.text);
       }
     });
   }
