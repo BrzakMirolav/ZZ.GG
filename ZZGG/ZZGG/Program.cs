@@ -31,7 +31,10 @@ Log.Logger = new LoggerConfiguration()
 .MinimumLevel.Debug()
 .MinimumLevel.Override("Microsoft", LogEventLevel.Error)
 .MinimumLevel.Override("Microsoft.AspNetCore", LogEventLevel.Error)
+.MinimumLevel.Override("Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware", LogEventLevel.Information)
 .Enrich.WithMachineName()
+.Enrich.WithCorrelationIdHeader()
+.Enrich.WithEnvironmentName()
 .WriteTo.File("Logs\\Log.txt", rollingInterval: RollingInterval.Day)
 .WriteTo.Elasticsearch(new ElasticsearchSinkOptions(new Uri("https://elastic:ek2022!187@localhost:9200"))
 {
@@ -47,6 +50,11 @@ Log.Logger = new LoggerConfiguration()
 .CreateLogger();
 
 SelfLog.Enable(Console.Error);
+
+builder.Services.AddHttpLogging(logging =>
+{
+    logging.LoggingFields = Microsoft.AspNetCore.HttpLogging.HttpLoggingFields.All;
+});
 
 builder.Logging.ClearProviders();
 builder.Logging.AddSerilog(Log.Logger);
@@ -79,7 +87,8 @@ var app = builder.Build();
 
 Log.Information("ZZGG API Started. Application name: " + _config["ApplicationName"]);
 
-//app.UseSerilogRequestLogging();
+app.UseSerilogRequestLogging();
+app.UseHttpLogging();
 
 if (app.Environment.IsDevelopment())
 {
