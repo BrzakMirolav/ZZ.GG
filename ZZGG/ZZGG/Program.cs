@@ -54,6 +54,8 @@ SelfLog.Enable(Console.Error);
 builder.Services.AddHttpLogging(logging =>
 {
     logging.LoggingFields = Microsoft.AspNetCore.HttpLogging.HttpLoggingFields.All;
+    logging.RequestHeaders.Add("x-correlation-id");
+    logging.ResponseHeaders.Add("x-correlation-id");
 });
 
 builder.Logging.ClearProviders();
@@ -87,7 +89,20 @@ var app = builder.Build();
 
 Log.Information("ZZGG API Started. Application name: " + _config["ApplicationName"]);
 
-app.UseSerilogRequestLogging();
+
+
+app.Use(async (context, nextMiddleware) =>
+{
+    var correlationId = Guid.NewGuid();
+    if (context.Response.Headers.ContainsKey("x-correlation-id"))
+        context.Response.Headers["x-correlation-id"] = correlationId + " " + context.Request.Headers["x-correlation-id"];
+    else
+        context.Response.Headers.Add("x-correlation-id", correlationId + " " + context.Request.Headers["x-correlation-id"]);
+    await nextMiddleware();
+
+});
+
+//app.UseSerilogRequestLogging();
 app.UseHttpLogging();
 
 if (app.Environment.IsDevelopment())
