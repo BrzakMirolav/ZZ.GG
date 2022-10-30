@@ -16,6 +16,7 @@
     <ProjectReference Include="..\BusinessLogic.Interfaces\ZZGG.BusinessLogic.Interfaces.csproj" />
     <ProjectReference Include="..\BusinessLogic\ZZGG.BusinessLogic.csproj" />
     <ProjectReference Include="..\ZZGG.Services\ZZGG.Services.csproj" />
+    <ProjectReference Include="..\ZZLogger\ZZLogger.csproj" />
   </ItemGroup>
 
 </Project>

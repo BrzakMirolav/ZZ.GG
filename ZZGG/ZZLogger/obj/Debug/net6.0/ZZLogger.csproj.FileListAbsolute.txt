@@ -1,0 +1,12 @@
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\ZZLogger\bin\Debug\net6.0\ZZLogger.deps.json
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\ZZLogger\bin\Debug\net6.0\ZZLogger.dll
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\ZZLogger\bin\Debug\net6.0\ZZLogger.pdb
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\ZZLogger\obj\Debug\net6.0\ZZLogger.csproj.AssemblyReference.cache
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\ZZLogger\obj\Debug\net6.0\ZZLogger.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\ZZLogger\obj\Debug\net6.0\ZZLogger.AssemblyInfoInputs.cache
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\ZZLogger\obj\Debug\net6.0\ZZLogger.AssemblyInfo.cs
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\ZZLogger\obj\Debug\net6.0\ZZLogger.csproj.CoreCompileInputs.cache
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\ZZLogger\obj\Debug\net6.0\ZZLogger.dll
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\ZZLogger\obj\Debug\net6.0\refint\ZZLogger.dll
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\ZZLogger\obj\Debug\net6.0\ZZLogger.pdb
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\ZZLogger\obj\Debug\net6.0\ref\ZZLogger.dll
