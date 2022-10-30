@@ -14,31 +14,43 @@ using Serilog;
 using Serilog.Events;
 using Serilog.Sinks.Elasticsearch;
 using Microsoft.Extensions.Configuration;
+using Serilog.Debugging;
 
 var builder = WebApplication.CreateBuilder(args);
 var _config = new ConfigurationBuilder()
         .AddJsonFile("appsettings.json", optional: false)
+        .AddJsonFile(
+                    $"appsettings.{Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")}.json",
+                    optional: true)
         .Build();
 
 // Add services to the container.
 
 Log.Logger = new LoggerConfiguration()
+.Enrich.FromLogContext()
 .MinimumLevel.Debug()
-.MinimumLevel.Override("Microsoft", LogEventLevel.Information)
-.MinimumLevel.Override("Microsoft.AspNetCore", LogEventLevel.Warning)
+.MinimumLevel.Override("Microsoft", LogEventLevel.Error)
+.MinimumLevel.Override("Microsoft.AspNetCore", LogEventLevel.Error)
+.Enrich.WithMachineName()
 .WriteTo.File("Logs\\Log.txt", rollingInterval: RollingInterval.Day)
 .WriteTo.Elasticsearch(new ElasticsearchSinkOptions(new Uri("https://elastic:ek2022!187@localhost:9200"))
 {
     //ModifyConnectionSettings = x => x.BasicAuthentication("elastic", "your-password"),
-     AutoRegisterTemplate = true,
-     IndexFormat = _config["ApplicationName"],
-     TypeName = null
+    ModifyConnectionSettings = configuration => configuration.ServerCertificateValidationCallback(
+                        (o, certificate, arg3, arg4) => { return true; }),
+    TypeName = null,
+    AutoRegisterTemplate = true,
+    IndexFormat = _config["ApplicationName"],
+
 })
 .ReadFrom.Configuration(_config)
 .CreateLogger();
 
+SelfLog.Enable(Console.Error);
+
 builder.Logging.ClearProviders();
 builder.Logging.AddSerilog(Log.Logger);
+builder.Host.UseSerilog(Log.Logger);
 
 builder.Services.AddControllers();
 builder.Services.AddHttpContextAccessor();
