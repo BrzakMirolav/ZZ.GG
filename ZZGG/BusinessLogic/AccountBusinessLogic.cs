@@ -25,6 +25,7 @@ namespace ZZGG.BusinessLogic
         {
             try
             {
+
                 var result = new ApiResponse<Account>();
 
                 var serviceResult = await _accountService.GetAccountDetailsBySummonerName(summonerName);

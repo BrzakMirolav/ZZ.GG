@@ -3,27 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZZGG.API", "ZZGG\ZZGG.API.csproj", "{B46A36FC-4A9B-4A53-9DEE-9F5B7A75F64B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZZGG.API", "ZZGG\ZZGG.API.csproj", "{B46A36FC-4A9B-4A53-9DEE-9F5B7A75F64B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZZGG.BusinessLogic", "BusinessLogic\ZZGG.BusinessLogic.csproj", "{2C5C34E9-FB8F-4778-8E50-01EEE894451B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZZGG.BusinessLogic", "BusinessLogic\ZZGG.BusinessLogic.csproj", "{2C5C34E9-FB8F-4778-8E50-01EEE894451B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZZGG.BusinessLogic.Interfaces", "BusinessLogic.Interfaces\ZZGG.BusinessLogic.Interfaces.csproj", "{4AE40113-5A6D-4F4F-81AF-9E2C412E4A98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZZGG.BusinessLogic.Interfaces", "BusinessLogic.Interfaces\ZZGG.BusinessLogic.Interfaces.csproj", "{4AE40113-5A6D-4F4F-81AF-9E2C412E4A98}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessLogic", "BusinessLogic", "{CF56CEA3-CA6A-4964-8D91-0DFDD594AB8E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{4028B51E-CA94-4EB9-A8C9-A81968B739B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZZGG.Services", "ZZGG.Services\ZZGG.Services.csproj", "{DF40EAE7-FCEC-4780-8BC0-BB59B7B2D097}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZZGG.Services", "ZZGG.Services\ZZGG.Services.csproj", "{DF40EAE7-FCEC-4780-8BC0-BB59B7B2D097}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZZGG.Services.Interfaces", "ZZGG.Services.Interfaces\ZZGG.Services.Interfaces.csproj", "{72B21A9E-E46D-4F9D-972D-D225E7F85CA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZZGG.Services.Interfaces", "ZZGG.Services.Interfaces\ZZGG.Services.Interfaces.csproj", "{72B21A9E-E46D-4F9D-972D-D225E7F85CA1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{06D71C73-C902-4C98-AF79-920E692D447C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessModel", "BusinessModels\BusinessModel.csproj", "{B363CBF0-2584-421E-A3D8-A57E68EA2585}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessModel", "BusinessModels\BusinessModel.csproj", "{B363CBF0-2584-421E-A3D8-A57E68EA2585}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataModel", "DataModels\DataModel.csproj", "{E08DB234-1CB3-4014-BF3B-8D1DEDAC5299}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataModel", "DataModels\DataModel.csproj", "{E08DB234-1CB3-4014-BF3B-8D1DEDAC5299}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mapper", "Mapper\Mapper.csproj", "{519C4E47-7186-4073-AC47-74233B9191C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mapper", "Mapper\Mapper.csproj", "{519C4E47-7186-4073-AC47-74233B9191C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{33171621-C754-4D4C-A3DE-87332C66761A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZZLogger", "ZZLogger\ZZLogger.csproj", "{41364AAF-D35B-401F-B83E-92C7521F7D78}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +67,10 @@ Global
 		{519C4E47-7186-4073-AC47-74233B9191C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{519C4E47-7186-4073-AC47-74233B9191C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{519C4E47-7186-4073-AC47-74233B9191C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41364AAF-D35B-401F-B83E-92C7521F7D78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41364AAF-D35B-401F-B83E-92C7521F7D78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41364AAF-D35B-401F-B83E-92C7521F7D78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41364AAF-D35B-401F-B83E-92C7521F7D78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,6 +83,7 @@ Global
 		{B363CBF0-2584-421E-A3D8-A57E68EA2585} = {06D71C73-C902-4C98-AF79-920E692D447C}
 		{E08DB234-1CB3-4014-BF3B-8D1DEDAC5299} = {06D71C73-C902-4C98-AF79-920E692D447C}
 		{519C4E47-7186-4073-AC47-74233B9191C6} = {06D71C73-C902-4C98-AF79-920E692D447C}
+		{41364AAF-D35B-401F-B83E-92C7521F7D78} = {33171621-C754-4D4C-A3DE-87332C66761A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {53773810-ED14-4E04-B122-5F3D3E832309}
