@@ -398,5 +398,5 @@ FodyWeavers.xsd
 *.sln.iml
 
 #random file
-.dtbcache.v2
-.dtbcache
+*.dtbcache.v2
+*.dtbcache
