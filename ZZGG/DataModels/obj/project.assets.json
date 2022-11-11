@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\DataModels\\DataModel.csproj",
+      "projectUniqueName": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\DataModels\\DataModel.csproj",
       "projectName": "DataModel",
-      "projectPath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\DataModels\\DataModel.csproj",
+      "projectPath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\DataModels\\DataModel.csproj",
       "packagesPath": "C:\\Users\\bmiki\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bmiki\\Source\\Repos\\ZZ.GG\\ZZGG\\DataModels\\obj\\",
+      "outputPath": "C:\\Users\\bmiki\\source\\repos\\ZZ.GG\\ZZGG\\DataModels\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\bmiki\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,11 +1,11 @@
-C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\BusinessModels\bin\Debug\net6.0\BusinessModel.deps.json
-C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\BusinessModels\bin\Debug\net6.0\BusinessModel.dll
-C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\BusinessModels\bin\Debug\net6.0\BusinessModel.pdb
 C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\BusinessModels\obj\Debug\net6.0\BusinessModel.csproj.AssemblyReference.cache
 C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\BusinessModels\obj\Debug\net6.0\BusinessModel.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\BusinessModels\obj\Debug\net6.0\BusinessModel.AssemblyInfoInputs.cache
 C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\BusinessModels\obj\Debug\net6.0\BusinessModel.AssemblyInfo.cs
 C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\BusinessModels\obj\Debug\net6.0\BusinessModel.csproj.CoreCompileInputs.cache
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\BusinessModels\bin\Debug\net6.0\BusinessModel.deps.json
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\BusinessModels\bin\Debug\net6.0\BusinessModel.dll
+C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\BusinessModels\bin\Debug\net6.0\BusinessModel.pdb
 C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\BusinessModels\obj\Debug\net6.0\BusinessModel.dll
 C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\BusinessModels\obj\Debug\net6.0\refint\BusinessModel.dll
 C:\Users\bmiki\source\repos\ZZ.GG\ZZGG\BusinessModels\obj\Debug\net6.0\BusinessModel.pdb

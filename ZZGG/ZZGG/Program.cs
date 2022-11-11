@@ -8,25 +8,25 @@ using ZZGG.BusinessLogic.Interfaces;
 using ZZGG.Services;
 using ZZGG.Services.Interfaces;
 
-using MvcJsonOptions = Microsoft.AspNetCore.Mvc.JsonOptions;
-using JsonOptions = Microsoft.AspNetCore.Http.Json.JsonOptions;
 using Serilog;
 using Serilog.Events;
 using Serilog.Sinks.Elasticsearch;
 using Microsoft.Extensions.Configuration;
 using Serilog.Debugging;
 
+using MvcJsonOptions = Microsoft.AspNetCore.Mvc.JsonOptions;
+using JsonOptions = Microsoft.AspNetCore.Http.Json.JsonOptions;
+
+
 var builder = WebApplication.CreateBuilder(args);
 var _config = new ConfigurationBuilder()
         .AddJsonFile("appsettings.json", optional: false)
-        .AddJsonFile(
-                    $"appsettings.{Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")}.json",
-                    optional: true)
+        .AddJsonFile($"appsettings.{Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")}.json", optional: true)
         .Build();
 
 // Add services to the container.
 
-Log.Logger = new LoggerConfiguration()
+var _logger = new LoggerConfiguration()
 .Enrich.FromLogContext()
 .MinimumLevel.Debug()
 .MinimumLevel.Override("Microsoft", LogEventLevel.Error)
@@ -56,11 +56,11 @@ builder.Services.AddHttpLogging(logging =>
     logging.LoggingFields = Microsoft.AspNetCore.HttpLogging.HttpLoggingFields.All;
     logging.RequestHeaders.Add("x-correlation-id");
     logging.ResponseHeaders.Add("x-correlation-id");
-});
+}); 
 
 builder.Logging.ClearProviders();
-builder.Logging.AddSerilog(Log.Logger);
-builder.Host.UseSerilog(Log.Logger);
+builder.Logging.AddSerilog(_logger);
+builder.Host.UseSerilog(_logger);
 
 builder.Services.AddControllers();
 builder.Services.AddHttpContextAccessor();
@@ -87,7 +87,7 @@ var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 
-Log.Information("ZZGG API Started. Application name: " + _config["ApplicationName"]);
+_logger.Information("ZZGG API Started. Application name: " + _config["ApplicationName"]);
 
 
 
@@ -97,7 +97,7 @@ app.Use(async (context, nextMiddleware) =>
     if (context.Response.Headers.ContainsKey("x-correlation-id"))
         context.Response.Headers["x-correlation-id"] = correlationId + " " + context.Request.Headers["x-correlation-id"];
     else
-        context.Response.Headers.Add("x-correlation-id", correlationId + " " + context.Request.Headers["x-correlation-id"]);
+        context.Response.Headers.Add("x-correlation-id", correlationId.ToString());
     await nextMiddleware();
 
 });
