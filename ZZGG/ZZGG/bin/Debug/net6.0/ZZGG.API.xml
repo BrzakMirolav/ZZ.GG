@@ -4,7 +4,7 @@
         <name>ZZGG.API</name>
     </assembly>
     <members>
-        <member name="M:ZZGG.Controllers.ZZGGController.GetAccountDetailsBySummonerName(System.String)">
+        <member name="M:ZZGG.Controllers.ZZGGController.GetAccountDetailsBySummonerName(ZZGG.BusinessLogic.Interfaces.IAccountBusinessLogic,System.String)">
             <summary>
             Method returns account details for provided summoner name.
             </summary>

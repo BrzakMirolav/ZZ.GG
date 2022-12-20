@@ -26,9 +26,9 @@ namespace ZZGG.Controllers
         /// <returns></returns>
         [HttpGet("GetAccountDetailsBySummonersName")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(ApiResponse<Account>))]
-        public async Task<IActionResult> GetAccountDetailsBySummonerName(string summonerName)
+        public async Task<IActionResult> GetAccountDetailsBySummonerName([FromServices]IAccountBusinessLogic _accBl, string summonerName) //Tested Methods Request with DI
         {
-            return Ok(await _accountBL.GetAccountDetailsBySummonerName(summonerName));
+            return Ok(await _accBl.GetAccountDetailsBySummonerName(summonerName));
         }
 
         [HttpGet("GetAccountDetailsByAccountId")]
