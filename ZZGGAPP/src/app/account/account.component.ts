@@ -1,9 +1,12 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Account } from '../models/account';
-import { faSearch, faRefresh, faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import { ZzggService } from '../services/zzgg.service';
 import { AccountChampionStats } from '../models/accountChampionStats';
 import { Champion } from '../models/champion';
+
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
+import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 
 @Component({
   selector: 'app-account',
@@ -11,12 +14,9 @@ import { Champion } from '../models/champion';
   styleUrls: ['./account.component.scss']
 })
 export class AccountComponent implements OnInit {
-  faSearch = faSearch;
-  faRefresh = faRefresh;
-  faMoon = faMoon;
-  faSun = faSun;
-  constructor(private zzggService: ZzggService) {
-    
+
+  constructor(private zzggService: ZzggService, library: FaIconLibrary) {
+    library.addIconPacks(far, fas);
    }
    version: string | null = "";
    errors: string | null = "";

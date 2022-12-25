@@ -6,8 +6,8 @@
             <label class="switch"> aaa
             <input type="checkbox" (change)="changeSelection($event)">
             <span class="slider round"> 
-                <fa-icon style="font-size:1.6em; color: #B2B2B2;" [icon]="faMoon"></fa-icon> &nbsp;
-                <fa-icon style="font-size:1.6em; color: #FFFF44;" [icon]="faSun"></fa-icon>
+                <fa-icon style="font-size:1.6em; color: #B2B2B2;" [icon]="['fas', 'moon']"></fa-icon> &nbsp;
+                <fa-icon style="font-size:1.6em; color: #FFFF44;" [icon]="['fas', 'sun']"></fa-icon>
             </span>
             </label>
             
@@ -19,8 +19,8 @@
     </h1>
 
     <input type="text" placeholder="Summoner name" [id]="userNameSearchInpuTheme">
-    <button [id]="searchButtonTheme" (click)="searchAccount()" formtarget="_blank"><fa-icon [icon]="faSearch"></fa-icon></button>
-    <button [id]="resetButtonTheme" (click)="resetAccount()" formtarget="_blank"><fa-icon [icon]="faRefresh"></fa-icon></button>
+    <button [id]="searchButtonTheme" (click)="searchAccount()" formtarget="_blank"><fa-icon [icon]="['fas', 'search']"></fa-icon></button>
+    <button [id]="resetButtonTheme" (click)="resetAccount()" formtarget="_blank"><fa-icon [icon]="['fas', 'refresh']"></fa-icon></button>
 
 
     <div [ngClass]="[accountLoadMainDivTheme]" *ngIf="accountLoaded" class="container-fluid">
